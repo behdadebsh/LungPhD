@@ -16,65 +16,21 @@ script is to visualise the outputs in 2D and 3D graphics.
             This code has been modified by Behdad Shaarbaf Ebrahimi (UoA - ABI) for academic purposes.
 """
 
-
-import numpy as np
-import dicom
-import os
-import scipy.ndimage as ndimage
 import matplotlib.pyplot as plt
-from skimage import measure, morphology, segmentation
+import numpy as np
+import scipy.ndimage as ndimage
 from mpl_toolkits.mplot3d.art3d import Poly3DCollection
 from plotly import figure_factory as FF
 from plotly.offline import init_notebook_mode, iplot
+from skimage import measure, morphology, segmentation
+
+from load_scan import get_pixels_hu, load_scan
+
 init_notebook_mode(connected=True)
-from traits.api import HasTraits, Instance, Array, \
-    on_trait_change
-from traitsui.api import View, Item, HGroup, Group
-
-from tvtk.api import tvtk
-from tvtk.pyface.scene import Scene
-
-from mayavi import mlab
-from mayavi.core.api import PipelineBase, Source
-from mayavi.core.ui.api import SceneEditor, MayaviScene, \
-                                MlabSceneModel
 
 
 # Load the scans in given folder path
-def load_scan(path):
-    slices = [dicom.read_file(path + '/' + s) for s in os.listdir(path)]
-    slices.sort(key = lambda x: int(x.InstanceNumber))
-    try:
-        slice_thickness = np.abs(slices[0].ImagePositionPatient[2] - slices[1].ImagePositionPatient[2])
-    except:
-        slice_thickness = np.abs(slices[0].SliceLocation - slices[1].SliceLocation)
-        
-    for s in slices:
-        s.SliceThickness = slice_thickness
-        
-    return slices
 
-def get_pixels_hu(scans):
-    image = np.stack([s.pixel_array for s in scans])
-    # Convert to int16 (from sometimes int16), 
-    # should be possible as values should always be low enough (<32k)
-    image = image.astype(np.int16)
-
-    # Set outside-of-scan pixels to 0
-    # The intercept is usually -1024, so air is approximately 0
-    image[image == -2000] = 0
-    
-    # Convert to Hounsfield units (HU)
-    intercept = scans[0].RescaleIntercept
-    slope = scans[0].RescaleSlope
-    
-    if slope != 1:
-        image = slope * image.astype(np.float64)
-        image = image.astype(np.int16)
-        
-    image += np.int16(intercept)
-    
-    return np.array(image, dtype=np.int16)
 
 path = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
 patient_scans = load_scan(path)
@@ -84,9 +40,10 @@ print ("Original Slice")
 plt.imshow(patient_images[slice], cmap='gray')
 plt.show()
 
+
 # Some of the starting Code is taken from ArnavJain, since it's more readable then my own
 def generate_markers(image):
-    #Creation of the internal Marker
+    # Creation of the internal Marker
     marker_internal = image < -500
     marker_internal = segmentation.clear_border(marker_internal)
     marker_internal_labels = measure.label(marker_internal)
@@ -103,7 +60,7 @@ def generate_markers(image):
     right_lung = marker_internal_labels == 2
     marker_internal = marker_internal_labels > 0
     
-    #Creation of the external Marker
+    # Creation of the external Marker
     
     external_a = ndimage.binary_dilation(marker_internal, iterations=30)
     external_b = ndimage.binary_dilation(marker_internal, iterations=60)
@@ -118,7 +75,7 @@ def generate_markers(image):
     marker_ex_left = ex_left_b ^ ex_left_a
     marker_ex_right = ex_right_b ^ ex_right_a
     
-    #Creation of the Watershed Marker matrix
+    # Creation of the Watershed Marker matrix
     
     marker_watershed = np.zeros((512, 512), dtype=np.int)
     watershed_left = np.zeros((512,512), dtype=np.int)
@@ -133,7 +90,7 @@ def generate_markers(image):
     
     return marker_internal, marker_external, marker_watershed, left_lung , right_lung, marker_ex_left, marker_ex_right, watershed_left, watershed_right
 
-#Show some example markers from the middle        
+# Show some example markers from the middle
 
 #test_patient_internal, test_patient_external, test_patient_watershed, left_lung, right_lung, ex_left, ex_right, watershed_left, watershed_right = generate_markers(patient_images[slice])
 #print ("Internal Marker")
@@ -207,6 +164,7 @@ def lung_segment(image):
 #    segmented = np.where(lungfilter == 1, image, -2000*np.ones((512, 512)))
     
     return segmentation, watershed, marker_internal, marker_external, marker_watershed, watershed_left, watershed_right
+
 
 def vesselness(image):
     segmented, watershed, marker_internal, marker_external, marker_watershed, watershed_left, watershed_right = lung_segment(image)
