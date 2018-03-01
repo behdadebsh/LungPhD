@@ -120,7 +120,8 @@ def generate_markers(image):
     watershed_right += right_lung * 255
     watershed_right += marker_ex_right * 128
     
-    return marker_internal, marker_external, marker_watershed, left_lung, right_lung, marker_ex_left, marker_ex_right, watershed_left, watershed_right
+    return marker_internal, marker_external, marker_watershed, left_lung, right_lung, marker_ex_left, marker_ex_right,\
+        watershed_left, watershed_right
 
 # Show some example markers from the middle
 
@@ -205,10 +206,8 @@ def vesselness(image):
 
 
 def main():
-    args_in = sys.argv[:]
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
-    # data_dir = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
     patient_scans = load_scan(data_dir)
     patient_images = get_pixels_hu(patient_scans)
     imgs, spacing = resample(patient_images, patient_scans, [1, 1, 1])
