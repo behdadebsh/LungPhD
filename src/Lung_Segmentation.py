@@ -1,5 +1,3 @@
-#!/usr/bin/env python2
-# -*- coding: utf-8 -*-
 """
 Created on Fri Feb  2 15:54:59 2018
 
@@ -17,66 +15,19 @@ script is to visualise the outputs in 2D and 3D graphics.
 """
 
 import sys
-
 import numpy as np
-import dicom
-import os
+from load_scan import load_scan, get_pixels_hu
 import scipy
 import scipy.ndimage as ndimage
-#from mayavi import mlab
-import matplotlib.pyplot as plt
+import matplotlib
+matplotlib.use('wx')
+from mayavi import mlab
 from skimage import measure, morphology, segmentation
 
 
-
-# Load the scans in given folder path
-def load_scan(path_files):
-    slices = [dicom.read_file(path_files + '/' + s) for s in os.listdir(path_files)]
-    slices.sort(key=lambda x: int(x.InstanceNumber))
-    try:
-        slice_thickness = np.abs(slices[0].ImagePositionPatient[2] - slices[1].ImagePositionPatient[2])
-    except:
-        slice_thickness = np.abs(slices[0].SliceLocation - slices[1].SliceLocation)
-        
-    for s in slices:
-        s.SliceThickness = slice_thickness
-        
-    return slices
-
-
-def get_pixels_hu(scans):
-    image = np.stack([s.pixel_array for s in scans])
-    # Convert to int16 (from sometimes int16), 
-    # should be possible as values should always be low enough (<32k)
-    image = image.astype(np.int16)
-
-    # Set outside-of-scan pixels to 0
-    # The intercept is usually -1024, so air is approximately 0
-    image[image == -2000] = 0
-    
-    # Convert to Hounsfield units (HU)
-    intercept = scans[0].RescaleIntercept
-    slope = scans[0].RescaleSlope
-    
-    if slope != 1:
-        image = slope * image.astype(np.float64)
-        image = image.astype(np.int16)
-        
-    image += np.int16(intercept)
-    
-    return np.array(image, dtype=np.int16)
-
-
-#sl = input('Which Slice do you want to mask? Enter it here: ')
-#print ("Original Slice")
-#plt.imshow(patient_images[sl], cmap='gray')
-#plt.show()
-
-
-# Some of the starting Code is taken from ArnavJain, since it's more readable then my own
 def generate_markers(image):
     # Creation of the internal Marker
-    marker_internal = image < -500
+    marker_internal = image < -500  # Lung Tissue threshold
     marker_internal = segmentation.clear_border(marker_internal)
     marker_internal_labels = measure.label(marker_internal)
     areas = [r.area for r in measure.regionprops(marker_internal_labels)]
@@ -88,8 +39,8 @@ def generate_markers(image):
                     marker_internal_labels[coordinates[0], coordinates[1]] = 0
     
     marker_internal_labels = measure.label(marker_internal_labels)
-    left_lung = marker_internal_labels == 1
-    right_lung = marker_internal_labels == 2
+    left_lung = marker_internal_labels == 1  # marking left lung with 1 values
+    right_lung = marker_internal_labels == 2  # marking right lung with 2 values
     marker_internal = marker_internal_labels > 0
     
     # Creation of the external Marker
@@ -123,20 +74,8 @@ def generate_markers(image):
     return marker_internal, marker_external, marker_watershed, left_lung, right_lung, marker_ex_left, marker_ex_right,\
         watershed_left, watershed_right
 
-# Show some example markers from the middle
 
-# test_patient_internal, test_patient_external, test_patient_watershed, left_lung, right_lung, ex_left, ex_right, watershed_left, watershed_right = generate_markers(patient_images[slice])
-# print ("Internal Marker")
-# plt.imshow(test_patient_internal, cmap='gray')
-# plt.show()
-# print ("Left Lung Marker")
-# plt.imshow(left_lung, cmap='gray')
-# plt.show()
-# print ("Right Lung Marker")
-# plt.imshow(right_lung, cmap='gray')
-# plt.show()
-
-
+# Function using watershed algorithm ro to lung segmentation
 def lung_segment(image):
     # Creation of the markers:
     marker_internal, marker_external, marker_watershed, left_lung, right_lung, ex_left, ex_right, watershed_left, watershed_right = generate_markers(image)
@@ -166,12 +105,13 @@ def lung_segment(image):
     seg_left = image * watershed_left
     seg_right = image * watershed_right
     seg = seg_left + seg_right
-    # seg = np.where(seg != 0, image, -2000*np.ones((512, 512)))
+    # seg = np.where(seg != 0, image, -2000*np.ones((512, 512))) # optional line in order give every voxel except lung a value of -2000 hounsfield unit
 
     return seg, watershed, marker_internal, marker_external, marker_watershed, watershed_left, watershed_right
 
 
-def resample(image, scan, new_spacing=[1, 1, 1]):
+# a function to downsample the image stack to make the code run faster
+def downsample(image, scan, new_spacing=[1, 1, 1]):
     # Determine current pixel spacing
     spacing = map(float, ([scan[0].SliceThickness] + scan[0].PixelSpacing))
     spacing = np.array(list(spacing))
@@ -187,54 +127,29 @@ def resample(image, scan, new_spacing=[1, 1, 1]):
     return image, new_spacing
 
 
-def vesselness(image):
-    segmented, watershed, marker_int, marker_ext, marker_watershed, watershed_left, watershed_right = lung_segment(image)
-    
-    vessels = segmented > 0
-    vessel_mask = ndimage.binary_opening(vessels, iterations=2)
-    vessels = image * vessel_mask
-#    print ("Vessel mask")
-#    plt.imshow(vessel_mask, cmap='gray')
-#    plt.show()
-#    print ("Vessel Segmentation")
-#    plt.imshow(vessels, cmap='gray')
-#    plt.show()
-    return vessel_mask, vessels
-    
-
-###############################################################################
-
-
 def main():
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
+    # data_dir = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
     patient_scans = load_scan(data_dir)
     patient_images = get_pixels_hu(patient_scans)
-    imgs, spacing = resample(patient_images, patient_scans, [1, 1, 1])
+    # imgs, spacing = resample(patient_images, patient_scans, [1, 1, 1])
     segmented = []
     wat = []
-    vessel = []
-    for i in range(len(imgs)):
-        seg, watershed, mark_int, mark_ext, mark_watershed, wat_left, wat_right = lung_segment(imgs[i])
-        ves_m, ves = vesselness(imgs[i])
+    for i in range(len(patient_images)):
+        seg, watershed, mark_int, mark_ext, mark_watershed, wat_left, wat_right = lung_segment(patient_images[i])
         segmented.append(seg)
         wat.append(watershed)
-        vessel.append(ves)
     segmented = np.asarray(segmented)
     wat = np.asarray(wat)
-    vessel = np.asarray(vessel)
-    wat[wat==128] = 0
-    # src = mlab.pipeline.scalar_field(wat)
-    #mlab.pipeline.volume(src, vmin=0, vmax=0.9)
+    wat[wat == 128] = 0
+    src1 = mlab.pipeline.scalar_field(wat)
+    mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
+    src2 = mlab.pipeline.scalar_field(segmented)
+    mlab.pipeline.volume(src2, vmin=0, vmax=0.8)
+    # mlab.pipeline.image_plane_widget(src1,plane_orientation='x_axes',slice_index=10)
+    # mlab.pipeline.image_plane_widget(src2,plane_orientation='y_axes',slice_index=10)
 
-    #mlab.pipeline.image_plane_widget(src,
-                                #plane_orientation='x_axes',
-                                #slice_index=10,
-                                #)
-    #mlab.pipeline.image_plane_widget(src,
-                                #plane_orientation='y_axes',
-                                #slice_index=10,
-                                #)
 
 if __name__ == '__main__':
     main()
