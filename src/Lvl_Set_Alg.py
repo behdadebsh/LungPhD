@@ -57,12 +57,12 @@ def lvlset(I, init_mask, max_its=200, alpha=0.2,
 
     while its < max_its and not stop:
         # Get the curve's narrow band
-        idx = np.flatnonzero(np.logical_and(phi <= 1.2, phi >= -1.2))
+        idx = np.flatnonzero(np.logical_and(phi <= 1.0, phi >= -1.0))
 
         if len(idx) > 0:
             # Intermediate output
             if display:
-                if np.mod(its, 50) == 0:
+                if np.mod(its, 10) == 0:
                     print('iteration: {0}'.format(its))
                     show_curve_and_phi(fig, I, phi, color)
             else:
