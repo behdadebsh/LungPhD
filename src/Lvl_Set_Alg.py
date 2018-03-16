@@ -36,8 +36,7 @@ import matplotlib.pyplot as plt
 eps = np.finfo(float).eps
 
 
-def lvlset(I, init_mask, max_its=200, alpha=0.2,
-             thresh=0, color='r', display=False):
+def lvlset(I, init_mask, max_its=200, alpha=0.2, thresh=0, color='r', display=False):
     I = I.astype(np.float)
 
     # Create a signed distance map (SDF) from mask
@@ -57,7 +56,7 @@ def lvlset(I, init_mask, max_its=200, alpha=0.2,
 
     while its < max_its and not stop:
         # Get the curve's narrow band
-        idx = np.flatnonzero(np.logical_and(phi <= 1.0, phi >= -1.0))
+        idx = np.flatnonzero(np.logical_and(phi <= 1.2, phi >= -1.2))
 
         if len(idx) > 0:
             # Intermediate output
