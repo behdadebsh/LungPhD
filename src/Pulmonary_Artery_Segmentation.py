@@ -1,11 +1,15 @@
 import sys
 import matplotlib
-matplotlib.use('WX')
+import matplotlib.pyplot as plt
+# matplotlib.use('TkAgg')
+# matplotlib.use('Qt4Agg')
+# import matplotlib
+# matplotlib.use('WXAgg')
 from PIL import ImageTk, Image
 import Tkinter as tk
 import scipy.ndimage as ndimage
 import scipy.ndimage.filters as filters
-from mayavi import mlab
+# from mayavi import mlab
 import numpy as np
 from load_scan import load_scan, get_pixels_hu
 from Lvl_Set_Alg import lvlset
@@ -52,7 +56,7 @@ def main():
     patient_images = get_pixels_hu(patient_scans)
     global artery_mask
     artery_mask = []
-    for k in range(147, 148):
+    for k in range(120, 170):
         global coords
         coords = []
         img = patient_images[k]
@@ -86,13 +90,14 @@ def main():
         for jj in range(len(coords)):
             seed[int(coords[jj][1]), int(coords[jj][0])] = 1
         seg, phi, its = lvlset(sharpened, seed, max_its=1000, display=True, alpha=0.2)
+        segment = seg * 1.0
+        matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(i) + '.png', segment)
         # fig.canvas.mpl_disconnect(cid)
         # plt.close()
-        segment = seg * 1.0
-        artery_mask.append(segment)
-    artery_mask = np.asarray(artery_mask)
-    src = mlab.pipeline.scalar_field(artery_mask)
-    mlab.pipeline.volume(src, vmin=0, vmax=0.8)
+        # artery_mask.append(segment)
+    # artery_mask = np.asarray(artery_mask)
+    # src = mlab.pipeline.scalar_field(artery_mask)
+    # mlab.pipeline.volume(src, vmin=0, vmax=0.8)
 
 
 if __name__ == '__main__':
