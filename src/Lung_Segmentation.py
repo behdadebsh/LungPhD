@@ -10,15 +10,16 @@ bigger areas. Therefore, the 2 largest areas would be lungs. Second, using some 
 and using the output from the first function to make lung mask and segment slices. Another feature of this
 script is to visualise the outputs in 2D and 3D graphics.
 
-@author: Behdad Shaarbaf Ebrahimi & Kaggle
-            This code has been modified by Behdad Shaarbaf Ebrahimi (UoA - ABI) for academic purposes.
+@author: Behdad Shaarbaf Ebrahimi
+    The functions are originated from Kaggle and modified by Behdad Shaarbaf Ebrahimi (UoA - ABI) for academic purposes.
 """
 
-import sys
+import sys, os
 import numpy as np
 from load_scan import load_scan, get_pixels_hu
 import scipy
 import scipy.ndimage as ndimage
+import matplotlib.pyplot as plt
 import matplotlib
 matplotlib.use('wx')
 from mayavi import mlab
@@ -45,14 +46,14 @@ def generate_markers(image):
     
     # Creation of the external Marker
     
-    external_a = ndimage.binary_dilation(marker_internal, iterations=30)
+    external_a = ndimage.binary_dilation(marker_internal, iterations=20)
     external_b = ndimage.binary_dilation(marker_internal, iterations=60)
     
-    ex_left_a = ndimage.binary_dilation(left_lung, iterations=30)
-    ex_left_b = ndimage.binary_dilation(left_lung, iterations=60)
+    ex_left_a = ndimage.binary_dilation(left_lung, iterations=20)
+    ex_left_b = ndimage.binary_dilation(left_lung, iterations=20)
     
-    ex_right_a = ndimage.binary_dilation(right_lung, iterations=30)
-    ex_right_b = ndimage.binary_dilation(right_lung, iterations=60)
+    ex_right_a = ndimage.binary_dilation(right_lung, iterations=20)
+    ex_right_b = ndimage.binary_dilation(right_lung, iterations=20)
     
     marker_external = external_b ^ external_a
     marker_ex_left = ex_left_b ^ ex_left_a
@@ -131,13 +132,17 @@ def main():
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
     # data_dir = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
-    patient_scans = load_scan(data_dir)
+    # data_dir = '/hpc/bsha219/lung/Data/P2BRP257-H12076/FRC/Raw/DICOMS'
+    patient_scans = load_scan('/hpc/bsha219/lung/Data/ST12/Raw/DICOMS')
     patient_images = get_pixels_hu(patient_scans)
-    # imgs, spacing = resample(patient_images, patient_scans, [1, 1, 1])
+    # imgs, spacing = downsample(patient_images, patient_scans, [1, 1, 1])
     segmented = []
     wat = []
     for i in range(len(patient_images)):
         seg, watershed, mark_int, mark_ext, mark_watershed, wat_left, wat_right = lung_segment(patient_images[i])
+        watershed[watershed == 128] = 0
+        watershed[watershed == 255] = 1
+        # matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Lung_masks/' + str(i) + '.png', watershed)
         segmented.append(seg)
         wat.append(watershed)
     segmented = np.asarray(segmented)
@@ -145,8 +150,8 @@ def main():
     wat[wat == 128] = 0
     src1 = mlab.pipeline.scalar_field(wat)
     mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
-    src2 = mlab.pipeline.scalar_field(segmented)
-    mlab.pipeline.volume(src2, vmin=0, vmax=0.8)
+    # src2 = mlab.pipeline.scalar_field(segmented)
+    # mlab.pipeline.volume(src2, vmin=0, vmax=0.8)
     # mlab.pipeline.image_plane_widget(src1,plane_orientation='x_axes',slice_index=10)
     # mlab.pipeline.image_plane_widget(src2,plane_orientation='y_axes',slice_index=10)
 
