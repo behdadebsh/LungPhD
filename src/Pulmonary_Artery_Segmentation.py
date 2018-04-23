@@ -56,28 +56,37 @@ def main():
     patient_images = get_pixels_hu(patient_scans)
     global artery_mask
     artery_mask = []
-    for k in range(120, 170):
+    for k in range(115, 190):
         global coords
         coords = []
         img = patient_images[k]
-        for i in range(img.shape[0]):
-            for j in range(img.shape[0]):
-                if img[i][j] > 0:
-                    img[i][j] *= 20
-        blurred_f = ndimage.gaussian_filter(img, sigma=3)
-        filter_blurred_f = ndimage.gaussian_filter(blurred_f, sigma=1)
-        filter_blurred_f2 = filters.median_filter(filter_blurred_f, 3)
-        alpha = 100
-        sharpened = blurred_f + alpha * (blurred_f - filter_blurred_f2)
-
         root = tk.Tk()
-        im = Image.fromarray(sharpened)
+        im = Image.fromarray(img)
         photo = ImageTk.PhotoImage(im)
         canvas = tk.Canvas(root, width=512, height=512)
         canvas.pack()
         canvas.create_image(256, 256, image=photo)
         canvas.bind("<Button-1>", onclick)
         root.mainloop()
+        for i in range(img.shape[0]):
+            for j in range(img.shape[0]):
+                if img[i][j] > 0:
+                    img[i][j] *= 12
+        # blurred_f = ndimage.gaussian_filter(img, sigma=3)
+        filter_blurred_f = filters.median_filter(img, 3)
+        filter_blurred_f2 = ndimage.gaussian_filter(filter_blurred_f, sigma=1)
+
+        alpha = 12
+        sharpened = filter_blurred_f + alpha * (filter_blurred_f - filter_blurred_f2)
+
+        # root = tk.Tk()
+        # im = Image.fromarray(sharpened)
+        # photo = ImageTk.PhotoImage(im)
+        # canvas = tk.Canvas(root, width=512, height=512)
+        # canvas.pack()
+        # canvas.create_image(256, 256, image=photo)
+        # canvas.bind("<Button-1>", onclick)
+        # root.mainloop()
 
         # fig = plt.figure()
         # plt.gray()
@@ -89,9 +98,9 @@ def main():
         seed = np.zeros(img.shape)
         for jj in range(len(coords)):
             seed[int(coords[jj][1]), int(coords[jj][0])] = 1
-        seg, phi, its = lvlset(sharpened, seed, max_its=1000, display=True, alpha=0.2)
+        seg, phi, its = lvlset(sharpened, seed, max_its=300, display=True, alpha=0.4)
         segment = seg * 1.0
-        matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(i) + '.png', segment)
+        matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(k) + '.png', segment)
         # fig.canvas.mpl_disconnect(cid)
         # plt.close()
         # artery_mask.append(segment)
