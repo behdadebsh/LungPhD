@@ -6,9 +6,9 @@ transforms the pixels to Hounsfield Units. The features implemented in these cod
 in a way to read the series of DICOM images from a folder and convert the voxel values into
 hounsfield unit numbers. In order to segment the lung, two functions are made to perform this action.
 First, markers are made via thresholding and then labeled. Labels are sorted from smaller areas to
-bigger areas. Therefore, the 2 largest areas would be lungs. Second, using some morphological tools
+bigger areas. Therefore, the 2 largest areas would be lungs. Second, using watershed algorithm
 and using the output from the first function to make lung mask and segment slices. Another feature of this
-script is to visualise the outputs in 2D and 3D graphics.
+script is to visualise the outputs in 2D and 3D graphics using mayavi.
 
 @author: Behdad Shaarbaf Ebrahimi
     The functions are originated from Kaggle and modified by Behdad Shaarbaf Ebrahimi (UoA - ABI) for academic purposes.
@@ -21,7 +21,8 @@ import scipy
 import scipy.ndimage as ndimage
 import matplotlib.pyplot as plt
 import matplotlib
-matplotlib.use('wx')
+# matplotlib.use('wx')          # depending on your working backend you should use
+# matplotlib.use('Qt4Agg')      # depending on your working backend you should use
 from mayavi import mlab
 from skimage import measure, morphology, segmentation
 
@@ -50,10 +51,10 @@ def generate_markers(image):
     external_b = ndimage.binary_dilation(marker_internal, iterations=60)
     
     ex_left_a = ndimage.binary_dilation(left_lung, iterations=20)
-    ex_left_b = ndimage.binary_dilation(left_lung, iterations=20)
+    ex_left_b = ndimage.binary_dilation(left_lung, iterations=60)
     
     ex_right_a = ndimage.binary_dilation(right_lung, iterations=20)
-    ex_right_b = ndimage.binary_dilation(right_lung, iterations=20)
+    ex_right_b = ndimage.binary_dilation(right_lung, iterations=60)
     
     marker_external = external_b ^ external_a
     marker_ex_left = ex_left_b ^ ex_left_a
@@ -72,8 +73,7 @@ def generate_markers(image):
     watershed_right += right_lung * 255
     watershed_right += marker_ex_right * 128
     
-    return marker_internal, marker_external, marker_watershed, left_lung, right_lung, marker_ex_left, marker_ex_right,\
-        watershed_left, watershed_right
+    return marker_internal, marker_external, marker_watershed, left_lung, right_lung, marker_ex_left, marker_ex_right, watershed_left, watershed_right
 
 
 # Function using watershed algorithm ro to lung segmentation
@@ -133,16 +133,19 @@ def main():
         data_dir = sys.argv[1]
     # data_dir = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
     # data_dir = '/hpc/bsha219/lung/Data/P2BRP257-H12076/FRC/Raw/DICOMS'
-    patient_scans = load_scan('/hpc/bsha219/lung/Data/ST12/Raw/DICOMS')
+    patient_scans = load_scan('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Raw/DICOMS')
     patient_images = get_pixels_hu(patient_scans)
     # imgs, spacing = downsample(patient_images, patient_scans, [1, 1, 1])
     segmented = []
     wat = []
     for i in range(len(patient_images)):
         seg, watershed, mark_int, mark_ext, mark_watershed, wat_left, wat_right = lung_segment(patient_images[i])
-        watershed[watershed == 128] = 0
-        watershed[watershed == 255] = 1
-        # matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Lung_masks/' + str(i) + '.png', watershed)
+
+        # to save them as a stack of masks in a directory
+        # watershed[watershed == 128] = 0
+        # watershed[watershed == 255] = 1
+        # matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.jpg' % i, watershed)
+
         segmented.append(seg)
         wat.append(watershed)
     segmented = np.asarray(segmented)
@@ -150,8 +153,8 @@ def main():
     wat[wat == 128] = 0
     src1 = mlab.pipeline.scalar_field(wat)
     mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
-    # src2 = mlab.pipeline.scalar_field(segmented)
-    # mlab.pipeline.volume(src2, vmin=0, vmax=0.8)
+    src2 = mlab.pipeline.scalar_field(segmented)
+    mlab.pipeline.volume(src2, vmin=0, vmax=0.8)
     # mlab.pipeline.image_plane_widget(src1,plane_orientation='x_axes',slice_index=10)
     # mlab.pipeline.image_plane_widget(src2,plane_orientation='y_axes',slice_index=10)
 
