@@ -17,11 +17,12 @@ import numpy as np
 from load_scan import load_scan, get_pixels_hu
 import scipy
 import scipy.ndimage as ndimage
-import matplotlib.pyplot as plt
-import matplotlib
+from PIL import Image
+# import matplotlib.pyplot as plt
+# import matplotlib
 # matplotlib.use('wx')          # depending on your working backend you should use
 # matplotlib.use('Qt4Agg')      # depending on your working backend you should use
-from mayavi import mlab
+# from mayavi import mlab
 from skimage import measure, morphology, segmentation
 
 
@@ -73,7 +74,8 @@ def lung_segment(image):
             if watershed[i, j] == 128:
                 watershed[i, j] = 0
     lung_centroids = [l.centroid for l in measure.regionprops(watershed)]
-    if lung_centroids[0][1] > 0.5 * len(image[1]) and watershed[int(lung_centroids[0][0])][int(lung_centroids[0][1])] == 255:
+    labels = [label.label for label in measure.regionprops(watershed)]
+    if lung_centroids[0][1] > 0.5 * len(image[1]) and labels[0] == 255:
         left_lung = watershed == 255  # marking left lung
         right_lung = watershed == 510  # marking right lung
     else:
@@ -81,8 +83,8 @@ def lung_segment(image):
         right_lung = watershed == 255
     left_lung[left_lung != 0] = 1
     right_lung[right_lung != 0] = 2
-    left_lung = left_lung * 1.0
-    right_lung = right_lung * 2.0
+    left_lung = left_lung * 5.0
+    right_lung = right_lung * 17.0
     lungs = right_lung + left_lung
 
     return lungs, left_lung, right_lung
@@ -113,18 +115,20 @@ def main():
     patient_scans = load_scan('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Raw/DICOMS')
     patient_images = get_pixels_hu(patient_scans)
 # imgs, spacing = downsample(patient_images, patient_scans, [1, 1, 1])
-    segmented = []
+#     segmented = []
 
     for i in range(len(patient_images)):
         lungs, left_lung, right_lung = lung_segment(patient_images[i])
-        segmented.append(lungs)
-        segmented = np.asarray(segmented)
+    # segmented.append(lungs)
+    # segmented = np.asarray(segmented)
+        lungs = np.uint8(lungs)
+    # to save them as a stack of masks in a directory
+        binary_im = Image.fromarray(lungs)
+        binary_im.save('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.jpg' % i, quality=100)
+    # scipy.misc.imsave('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.png' % i, lungs)
 
-        # to save them as a stack of masks in a directory
-        scipy.misc.imsave('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.jpg' % i, lungs)
-
-    src1 = mlab.pipeline.scalar_field(segmented)
-    mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
+    # src1 = mlab.pipeline.scalar_field(segmented)
+    # mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
     # mlab.pipeline.image_plane_widget(src1,plane_orientation='x_axes',slice_index=10)
 
 
