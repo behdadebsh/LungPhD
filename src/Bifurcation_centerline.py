@@ -1,11 +1,12 @@
 import numpy as np
 
+from .utils import writeExDataFile
 #
 # """
 #
-# This file reads surface data points and calculates centerlines and writes the coordinates as '*.exdata' format
-# that is compatible with cmgui.
-#
+# This file reads surface data points created using CMISS and calculates centerlines and writes the coordinates as
+# '*.exdata' format that is compatible with cmgui. Centerline points in this file miss the junction point and the
+# surface of inlet and outlets. This file calculates radius
 #
 # """
 
@@ -42,20 +43,5 @@ radius = []
 for j in range(len(r)):
     radius.append(np.mean(r[j]))
 
-
-f1 = open("bif_centerline.exdata", 'w')
-f1.write(' Group name : data points\n')
-f1.write(' #Fields=2\n')
-f1.write(' 1) coordinates, coordinate, rectangular cartesian, #Components=3\n')
-f1.write('\tx.  Value index= 1, #Derivatives= 0\n')
-f1.write('\ty.  Value index= 2, #Derivatives= 0\n')
-f1.write('\tz.  Value index= 3, #Derivatives= 0\n')
-f1.write(' 2) radius, field, rectangular cartesian, #Components=1\n')
-f1.write('\tr.  Value index= 4, #Derivatives= 0\n')
-f1.close()
-
-with open('bif_centerline.exdata', 'at') as f:
-    for i in range(1, 13):
-        f.write(' Node:     %.4d\n' % i)
-        f.write('   %s  %s  %s\n' % (x[i-1], y[i-1], z[i-1]))
-        f.write('   %s\n' % radius[i-1])
+filename = 'bif_centerline.exdata'
+writeExDataFile(filename)
