@@ -1,8 +1,12 @@
 
-=================
-Lung Segmentation
-=================
+=======================
+Lung & MPA Segmentation
+=======================
 
-This project is focused on segmenting images of the lung ...
+This project is focused on segmenting CT images of the chest. In this project you may find source code file (Python 2.x) and documentation on the scripts on /docs directory. Some examples are presented in /examples folder to help understanding the code.
+
+Web access of documentation is available through `readthedocs <https://segmentation.readthedocs.io/en/latest/`_. The status of the documentation build is: ` <a href='https://segmentation.readthedocs.io/en/latest/?badge=latest'>`_.
+
+
 
 
