@@ -22,7 +22,7 @@ for i in range(len(images_hu)):
     lungs, left_lung, right_lung = lung_segment(images_hu[i])
     lungs = np.uint8(lungs)
     binary_im = Image.fromarray(lungs)   # Using PIL here
-    binary_im.save('./results/LungMask%d.jpg' % i+1, quality=100)  # Saving the slice into a file
+    binary_im.save('./results/LungMask%d.jpg' % (i+1), quality=100)  # Saving the slice into a file
     plt.figure()
 
     plt.subplot(2, 2, 1)
