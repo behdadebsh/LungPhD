@@ -12,5 +12,13 @@ Web access of documentation is available through `readthedocs <https://segmentat
    :alt: Documentation Status
 
 
+Example:
+--------
+
+|MPA|
+
+.. |MPA| image:: /docs/_static/MPA-gif.gif
+
+
 
 
