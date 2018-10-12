@@ -15,6 +15,8 @@ Web access of documentation is available through `readthedocs <https://segmentat
 Example:
 --------
 
+Semi-automatic Main Pulmonary Artery segmentation:
+
 |MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
