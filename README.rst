@@ -18,7 +18,7 @@ Example:
 |MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
-         :scale: 200 %
+         :height: 200
 
 
 
