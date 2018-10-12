@@ -18,8 +18,6 @@ Example:
 |MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
-   :height: 10px
-   :width: 10 px
    :align: center
 
 
