@@ -21,6 +21,8 @@ Semi-automatic Lung & Main Pulmonary Artery segmentation:
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
 .. |lungs| image:: /docs/_static/lungs.png
+   :height: 100
+   :width: 100
    :scale: 20%
 .. |inside| image:: /docs/_static/inside.png
 .. |mparesult| image:: /docs/_static/mparesult.png
