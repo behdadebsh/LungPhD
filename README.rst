@@ -17,7 +17,7 @@ Example:
 
 Semi-automatic Main Pulmonary Artery segmentation:
 
-|MPA| |lungs| |inside| |mparesult|
+|MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
 
