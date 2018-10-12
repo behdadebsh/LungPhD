@@ -18,7 +18,6 @@ Example:
 |MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
-   :align: center
 
 
 
