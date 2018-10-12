@@ -18,8 +18,8 @@ Example:
 |MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
-   :height: 800px
-   :width: 800 px
+   :height: 10px
+   :width: 10 px
 
 
 
