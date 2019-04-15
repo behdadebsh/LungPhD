@@ -31,7 +31,7 @@ def main():
     patient_images = get_pixels_hu(patient_scans)
     global artery_mask
     artery_mask = []
-    for k in range(151, 152):
+    for k in range(115, 215):
         global coords
         coords = []
         img = patient_images[k]
@@ -51,15 +51,15 @@ def main():
         filter_blurred_f = filters.median_filter(img, 3)
         filter_blurred_f2 = ndimage.gaussian_filter(filter_blurred_f, sigma=1)
 
-        alpha = 10
+        alpha = 12
         sharpened = filter_blurred_f + alpha * (filter_blurred_f - filter_blurred_f2)
         seed = np.zeros(img.shape)
         for jj in range(len(coords)):
             seed[int(coords[jj][1]), int(coords[jj][0])] = 1
-        seg, phi, its = lvlset(sharpened, seed, max_its=1800, display=True, alpha=0.2, thresh=0.1)
+        seg, phi, its = lvlset(sharpened, seed, max_its=1000, display=True, alpha=0.4)
         segment = seg * 1.0
-        scipy.misc.imsave('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/%.4d.jpg' % k, segment) # binary files
-        # matplotlib.image.imsave('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/' + str(k) + '.png', segment)  # RGB files
+        # scipy.misc.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/LungMask%.4d.jpg' % k, segment) # binary files
+        matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(k) + '.png', segment)  # RGB files
 
 
 if __name__ == '__main__':
