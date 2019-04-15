@@ -4,7 +4,7 @@ from procrustes import procrustes
 from utils import writeExNodeFile, writeipNodeFile
 
 template_dir = '/hpc/bsha219/lung/GeometricModels/3D_Digitise/Templates/art_template.exnode'
-centreline_dir = '/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/SurfaceFEMesh/centre_points.exdata'
+centreline_dir = '/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/1DMesh/centre_points.exdata'
 
 with open(template_dir, 'rt') as f:
     template = f.read()
@@ -136,5 +136,5 @@ for i in left:
     a[i-1][1] += v1126_y
     a[i-1][2] += v1126_z
 
-writeExNodeFile('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/SurfaceFEMesh/new_template.exnode', a)
-writeipNodeFile('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/SurfaceFEMesh/new_template.ipnode', a)
+writeExNodeFile('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/1DMesh/new_template.exnode', a)
+writeipNodeFile('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/1DMesh/new_template.ipnode', a)

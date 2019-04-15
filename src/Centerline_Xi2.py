@@ -109,4 +109,4 @@ for j in range(len(junction_rings)):
     junction_radii.append(junction_radius)
 junction_radii = np.mean(junction_radii)
 radii.append(junction_radii)
-writeExDataFile(directory + 'centre_points.exdata', center_points, radii)
+writeExDataFile('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/1DMesh/centre_points.exdata', center_points, radii)

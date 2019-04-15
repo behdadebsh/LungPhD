@@ -1,0 +1,4262 @@
+ Group name: surf_tri_R
+ Shape. Dimension=1
+ Element: 0 0     1
+ Element: 0 0     2
+ Element: 0 0     3
+ Element: 0 0     4
+ Element: 0 0     5
+ Element: 0 0     6
+ Element: 0 0     7
+ Element: 0 0     8
+ Element: 0 0     9
+ Element: 0 0    10
+ Element: 0 0    11
+ Element: 0 0    12
+ Element: 0 0    13
+ Element: 0 0    14
+ Element: 0 0    15
+ Element: 0 0    16
+ Element: 0 0    17
+ Element: 0 0    18
+ Element: 0 0    19
+ Element: 0 0    20
+ Element: 0 0    21
+ Element: 0 0    22
+ Element: 0 0    23
+ Element: 0 0    24
+ Element: 0 0    25
+ Element: 0 0    26
+ Element: 0 0    27
+ Element: 0 0    28
+ Element: 0 0    29
+ Element: 0 0    30
+ Element: 0 0    31
+ Element: 0 0    32
+ Element: 0 0    33
+ Element: 0 0    34
+ Element: 0 0    35
+ Element: 0 0    36
+ Element: 0 0    37
+ Element: 0 0    38
+ Element: 0 0    39
+ Element: 0 0    40
+ Element: 0 0    41
+ Element: 0 0    42
+ Element: 0 0    43
+ Element: 0 0    44
+ Element: 0 0    45
+ Element: 0 0    46
+ Element: 0 0    47
+ Element: 0 0    48
+ Element: 0 0    49
+ Element: 0 0    50
+ Element: 0 0    51
+ Element: 0 0    52
+ Element: 0 0    53
+ Element: 0 0    54
+ Element: 0 0    55
+ Element: 0 0    56
+ Element: 0 0    57
+ Element: 0 0    58
+ Element: 0 0    59
+ Element: 0 0    60
+ Element: 0 0    61
+ Element: 0 0    62
+ Element: 0 0    63
+ Element: 0 0    64
+ Element: 0 0    65
+ Element: 0 0    66
+ Element: 0 0    67
+ Element: 0 0    68
+ Element: 0 0    69
+ Element: 0 0    70
+ Element: 0 0    71
+ Element: 0 0    72
+ Element: 0 0    73
+ Element: 0 0    74
+ Element: 0 0    75
+ Element: 0 0    76
+ Element: 0 0    77
+ Element: 0 0    78
+ Element: 0 0    79
+ Element: 0 0    80
+ Element: 0 0    81
+ Element: 0 0    82
+ Element: 0 0    83
+ Element: 0 0    84
+ Element: 0 0    85
+ Element: 0 0    86
+ Element: 0 0    87
+ Element: 0 0    88
+ Element: 0 0    89
+ Element: 0 0    90
+ Element: 0 0    91
+ Element: 0 0    92
+ Element: 0 0    93
+ Element: 0 0    94
+ Element: 0 0    95
+ Element: 0 0    96
+ Element: 0 0    97
+ Element: 0 0    98
+ Element: 0 0    99
+ Element: 0 0   100
+ Element: 0 0   101
+ Element: 0 0   102
+ Element: 0 0   103
+ Element: 0 0   104
+ Element: 0 0   105
+ Element: 0 0   106
+ Element: 0 0   107
+ Element: 0 0   108
+ Element: 0 0   109
+ Element: 0 0   110
+ Element: 0 0   111
+ Element: 0 0   112
+ Element: 0 0   113
+ Element: 0 0   114
+ Element: 0 0   115
+ Element: 0 0   116
+ Element: 0 0   117
+ Element: 0 0   118
+ Element: 0 0   119
+ Element: 0 0   120
+ Element: 0 0   121
+ Element: 0 0   122
+ Element: 0 0   123
+ Element: 0 0   124
+ Element: 0 0   125
+ Element: 0 0   126
+ Element: 0 0   127
+ Element: 0 0   128
+ Element: 0 0   129
+ Element: 0 0   130
+ Element: 0 0   131
+ Element: 0 0   132
+ Element: 0 0   133
+ Element: 0 0   134
+ Element: 0 0   135
+ Element: 0 0   136
+ Element: 0 0   137
+ Element: 0 0   138
+ Element: 0 0   139
+ Element: 0 0   140
+ Element: 0 0   141
+ Element: 0 0   142
+ Element: 0 0   143
+ Element: 0 0   144
+ Element: 0 0   145
+ Element: 0 0   146
+ Element: 0 0   147
+ Element: 0 0   148
+ Element: 0 0   149
+ Element: 0 0   150
+ Element: 0 0   151
+ Element: 0 0   152
+ Element: 0 0   153
+ Element: 0 0   154
+ Element: 0 0   155
+ Element: 0 0   156
+ Element: 0 0   157
+ Element: 0 0   158
+ Element: 0 0   159
+ Element: 0 0   160
+ Element: 0 0   161
+ Element: 0 0   162
+ Element: 0 0   163
+ Element: 0 0   164
+ Element: 0 0   165
+ Element: 0 0   166
+ Element: 0 0   167
+ Element: 0 0   168
+ Element: 0 0   169
+ Element: 0 0   170
+ Element: 0 0   171
+ Element: 0 0   172
+ Element: 0 0   173
+ Element: 0 0   174
+ Element: 0 0   175
+ Element: 0 0   176
+ Element: 0 0   177
+ Element: 0 0   178
+ Element: 0 0   179
+ Element: 0 0   180
+ Element: 0 0   181
+ Element: 0 0   182
+ Element: 0 0   183
+ Element: 0 0   184
+ Element: 0 0   185
+ Element: 0 0   186
+ Element: 0 0   187
+ Element: 0 0   188
+ Element: 0 0   189
+ Element: 0 0   190
+ Element: 0 0   191
+ Element: 0 0   192
+ Element: 0 0   193
+ Element: 0 0   194
+ Element: 0 0   195
+ Element: 0 0   196
+ Element: 0 0   197
+ Element: 0 0   198
+ Element: 0 0   199
+ Element: 0 0   200
+ Element: 0 0   201
+ Element: 0 0   202
+ Element: 0 0   203
+ Element: 0 0   204
+ Element: 0 0   205
+ Element: 0 0   206
+ Element: 0 0   207
+ Element: 0 0   208
+ Element: 0 0   209
+ Element: 0 0   210
+ Element: 0 0   211
+ Element: 0 0   212
+ Element: 0 0   213
+ Element: 0 0   214
+ Element: 0 0   215
+ Element: 0 0   216
+ Element: 0 0   217
+ Element: 0 0   218
+ Element: 0 0   219
+ Element: 0 0   220
+ Element: 0 0   221
+ Element: 0 0   222
+ Element: 0 0   223
+ Element: 0 0   224
+ Element: 0 0   225
+ Element: 0 0   226
+ Element: 0 0   227
+ Element: 0 0   228
+ Element: 0 0   229
+ Element: 0 0   230
+ Element: 0 0   231
+ Element: 0 0   232
+ Element: 0 0   233
+ Element: 0 0   234
+ Element: 0 0   235
+ Element: 0 0   236
+ Element: 0 0   237
+ Element: 0 0   238
+ Element: 0 0   239
+ Element: 0 0   240
+ Element: 0 0   241
+ Element: 0 0   242
+ Element: 0 0   243
+ Element: 0 0   244
+ Element: 0 0   245
+ Element: 0 0   246
+ Element: 0 0   247
+ Element: 0 0   248
+ Element: 0 0   249
+ Element: 0 0   250
+ Element: 0 0   251
+ Element: 0 0   252
+ Element: 0 0   253
+ Element: 0 0   254
+ Element: 0 0   255
+ Element: 0 0   256
+ Element: 0 0   257
+ Element: 0 0   258
+ Element: 0 0   259
+ Element: 0 0   260
+ Element: 0 0   261
+ Element: 0 0   262
+ Element: 0 0   263
+ Element: 0 0   264
+ Element: 0 0   265
+ Element: 0 0   266
+ Element: 0 0   267
+ Element: 0 0   268
+ Element: 0 0   269
+ Element: 0 0   270
+ Element: 0 0   271
+ Element: 0 0   272
+ Element: 0 0   273
+ Element: 0 0   274
+ Element: 0 0   275
+ Element: 0 0   276
+ Element: 0 0   277
+ Element: 0 0   278
+ Element: 0 0   279
+ Element: 0 0   280
+ Element: 0 0   281
+ Element: 0 0   282
+ Element: 0 0   283
+ Element: 0 0   284
+ Element: 0 0   285
+ Element: 0 0   286
+ Element: 0 0   287
+ Element: 0 0   288
+ Element: 0 0   289
+ Element: 0 0   290
+ Element: 0 0   291
+ Element: 0 0   292
+ Element: 0 0   293
+ Element: 0 0   294
+ Element: 0 0   295
+ Element: 0 0   296
+ Element: 0 0   297
+ Element: 0 0   298
+ Element: 0 0   299
+ Element: 0 0   300
+ Element: 0 0   301
+ Element: 0 0   302
+ Element: 0 0   303
+ Element: 0 0   304
+ Element: 0 0   305
+ Element: 0 0   306
+ Element: 0 0   307
+ Element: 0 0   308
+ Element: 0 0   309
+ Element: 0 0   310
+ Element: 0 0   311
+ Element: 0 0   312
+ Element: 0 0   313
+ Element: 0 0   314
+ Element: 0 0   315
+ Element: 0 0   316
+ Element: 0 0   317
+ Element: 0 0   318
+ Element: 0 0   319
+ Element: 0 0   320
+ Element: 0 0   321
+ Element: 0 0   322
+ Element: 0 0   323
+ Element: 0 0   324
+ Element: 0 0   325
+ Element: 0 0   326
+ Element: 0 0   327
+ Element: 0 0   328
+ Element: 0 0   329
+ Element: 0 0   330
+ Element: 0 0   331
+ Element: 0 0   332
+ Element: 0 0   333
+ Element: 0 0   334
+ Element: 0 0   335
+ Element: 0 0   336
+ Element: 0 0   337
+ Element: 0 0   338
+ Element: 0 0   339
+ Element: 0 0   340
+ Element: 0 0   341
+ Element: 0 0   342
+ Element: 0 0   343
+ Element: 0 0   344
+ Element: 0 0   345
+ Element: 0 0   346
+ Element: 0 0   347
+ Element: 0 0   348
+ Element: 0 0   349
+ Element: 0 0   350
+ Element: 0 0   351
+ Element: 0 0   352
+ Element: 0 0   353
+ Element: 0 0   354
+ Element: 0 0   355
+ Element: 0 0   356
+ Element: 0 0   357
+ Element: 0 0   358
+ Element: 0 0   359
+ Element: 0 0   360
+ Element: 0 0   361
+ Element: 0 0   362
+ Element: 0 0   363
+ Element: 0 0   364
+ Element: 0 0   365
+ Element: 0 0   366
+ Element: 0 0   367
+ Element: 0 0   368
+ Element: 0 0   369
+ Element: 0 0   370
+ Element: 0 0   371
+ Element: 0 0   372
+ Element: 0 0   373
+ Element: 0 0   374
+ Element: 0 0   375
+ Element: 0 0   376
+ Element: 0 0   377
+ Element: 0 0   378
+ Element: 0 0   379
+ Element: 0 0   380
+ Element: 0 0   381
+ Element: 0 0   382
+ Element: 0 0   383
+ Element: 0 0   384
+ Element: 0 0   385
+ Element: 0 0   386
+ Element: 0 0   387
+ Element: 0 0   388
+ Element: 0 0   389
+ Element: 0 0   390
+ Element: 0 0   391
+ Element: 0 0   392
+ Element: 0 0   393
+ Element: 0 0   394
+ Element: 0 0   395
+ Element: 0 0   396
+ Element: 0 0   397
+ Element: 0 0   398
+ Element: 0 0   399
+ Element: 0 0   400
+ Element: 0 0   401
+ Element: 0 0   402
+ Element: 0 0   403
+ Element: 0 0   404
+ Element: 0 0   405
+ Element: 0 0   406
+ Element: 0 0   407
+ Element: 0 0   408
+ Element: 0 0   409
+ Element: 0 0   410
+ Element: 0 0   411
+ Element: 0 0   412
+ Element: 0 0   413
+ Element: 0 0   414
+ Element: 0 0   415
+ Element: 0 0   416
+ Element: 0 0   417
+ Element: 0 0   418
+ Element: 0 0   419
+ Element: 0 0   420
+ Element: 0 0   421
+ Element: 0 0   422
+ Element: 0 0   423
+ Element: 0 0   424
+ Element: 0 0   425
+ Element: 0 0   426
+ Element: 0 0   427
+ Element: 0 0   428
+ Element: 0 0   429
+ Element: 0 0   430
+ Element: 0 0   431
+ Element: 0 0   432
+ Element: 0 0   433
+ Element: 0 0   434
+ Element: 0 0   435
+ Element: 0 0   436
+ Element: 0 0   437
+ Element: 0 0   438
+ Element: 0 0   439
+ Element: 0 0   440
+ Element: 0 0   441
+ Element: 0 0   442
+ Element: 0 0   443
+ Element: 0 0   444
+ Element: 0 0   445
+ Element: 0 0   446
+ Element: 0 0   447
+ Element: 0 0   448
+ Element: 0 0   449
+ Element: 0 0   450
+ Element: 0 0   451
+ Element: 0 0   452
+ Element: 0 0   453
+ Element: 0 0   454
+ Element: 0 0   455
+ Element: 0 0   456
+ Element: 0 0   457
+ Element: 0 0   458
+ Element: 0 0   459
+ Element: 0 0   460
+ Element: 0 0   461
+ Element: 0 0   462
+ Element: 0 0   463
+ Element: 0 0   464
+ Element: 0 0   465
+ Element: 0 0   466
+ Element: 0 0   467
+ Element: 0 0   468
+ Element: 0 0   469
+ Element: 0 0   470
+ Element: 0 0   471
+ Element: 0 0   472
+ Element: 0 0   473
+ Element: 0 0   474
+ Element: 0 0   475
+ Element: 0 0   476
+ Element: 0 0   477
+ Element: 0 0   478
+ Element: 0 0   479
+ Element: 0 0   480
+ Element: 0 0   481
+ Element: 0 0   482
+ Element: 0 0   483
+ Element: 0 0   484
+ Element: 0 0   485
+ Element: 0 0   486
+ Element: 0 0   487
+ Element: 0 0   488
+ Element: 0 0   489
+ Element: 0 0   490
+ Element: 0 0   491
+ Element: 0 0   492
+ Element: 0 0   493
+ Element: 0 0   494
+ Element: 0 0   495
+ Element: 0 0   496
+ Element: 0 0   497
+ Element: 0 0   498
+ Element: 0 0   499
+ Element: 0 0   500
+ Element: 0 0   501
+ Element: 0 0   502
+ Element: 0 0   503
+ Element: 0 0   504
+ Element: 0 0   505
+ Element: 0 0   506
+ Element: 0 0   507
+ Element: 0 0   508
+ Element: 0 0   509
+ Element: 0 0   510
+ Element: 0 0   511
+ Element: 0 0   512
+ Element: 0 0   513
+ Element: 0 0   514
+ Element: 0 0   515
+ Element: 0 0   516
+ Element: 0 0   517
+ Element: 0 0   518
+ Element: 0 0   519
+ Element: 0 0   520
+ Element: 0 0   521
+ Element: 0 0   522
+ Element: 0 0   523
+ Element: 0 0   524
+ Element: 0 0   525
+ Element: 0 0   526
+ Element: 0 0   527
+ Element: 0 0   528
+ Element: 0 0   529
+ Element: 0 0   530
+ Element: 0 0   531
+ Element: 0 0   532
+ Element: 0 0   533
+ Element: 0 0   534
+ Element: 0 0   535
+ Element: 0 0   536
+ Element: 0 0   537
+ Element: 0 0   538
+ Element: 0 0   539
+ Element: 0 0   540
+ Element: 0 0   541
+ Element: 0 0   542
+ Element: 0 0   543
+ Element: 0 0   544
+ Element: 0 0   545
+ Element: 0 0   546
+ Element: 0 0   547
+ Element: 0 0   548
+ Element: 0 0   549
+ Element: 0 0   550
+ Element: 0 0   551
+ Element: 0 0   552
+ Element: 0 0   553
+ Element: 0 0   554
+ Element: 0 0   555
+ Element: 0 0   556
+ Element: 0 0   557
+ Element: 0 0   558
+ Element: 0 0   559
+ Element: 0 0   560
+ Element: 0 0   561
+ Element: 0 0   562
+ Element: 0 0   563
+ Element: 0 0   564
+ Element: 0 0   565
+ Element: 0 0   566
+ Element: 0 0   567
+ Element: 0 0   568
+ Element: 0 0   569
+ Element: 0 0   570
+ Element: 0 0   571
+ Element: 0 0   572
+ Element: 0 0   573
+ Element: 0 0   574
+ Element: 0 0   575
+ Element: 0 0   576
+ Element: 0 0   577
+ Element: 0 0   578
+ Element: 0 0   579
+ Element: 0 0   580
+ Element: 0 0   581
+ Element: 0 0   582
+ Element: 0 0   583
+ Element: 0 0   584
+ Element: 0 0   585
+ Element: 0 0   586
+ Element: 0 0   587
+ Element: 0 0   588
+ Element: 0 0   589
+ Element: 0 0   590
+ Element: 0 0   591
+ Element: 0 0   592
+ Element: 0 0   593
+ Element: 0 0   594
+ Element: 0 0   595
+ Element: 0 0   596
+ Element: 0 0   597
+ Element: 0 0   598
+ Element: 0 0   599
+ Element: 0 0   600
+ Element: 0 0   601
+ Element: 0 0   602
+ Element: 0 0   603
+ Element: 0 0   604
+ Element: 0 0   605
+ Element: 0 0   606
+ Element: 0 0   607
+ Element: 0 0   608
+ Element: 0 0   609
+ Element: 0 0   610
+ Element: 0 0   611
+ Element: 0 0   612
+ Element: 0 0   613
+ Element: 0 0   614
+ Element: 0 0   615
+ Element: 0 0   616
+ Element: 0 0   617
+ Element: 0 0   618
+ Element: 0 0   619
+ Element: 0 0   620
+ Element: 0 0   621
+ Element: 0 0   622
+ Element: 0 0   623
+ Element: 0 0   624
+ Element: 0 0   625
+ Element: 0 0   626
+ Element: 0 0   627
+ Element: 0 0   628
+ Element: 0 0   629
+ Element: 0 0   630
+ Element: 0 0   631
+ Element: 0 0   632
+ Element: 0 0   633
+ Element: 0 0   634
+ Element: 0 0   635
+ Element: 0 0   636
+ Element: 0 0   637
+ Element: 0 0   638
+ Element: 0 0   639
+ Element: 0 0   640
+ Element: 0 0   641
+ Element: 0 0   642
+ Element: 0 0   643
+ Element: 0 0   644
+ Element: 0 0   645
+ Element: 0 0   646
+ Element: 0 0   647
+ Element: 0 0   648
+ Element: 0 0   649
+ Element: 0 0   650
+ Element: 0 0   651
+ Element: 0 0   652
+ Element: 0 0   653
+ Element: 0 0   654
+ Element: 0 0   655
+ Element: 0 0   656
+ Element: 0 0   657
+ Element: 0 0   658
+ Element: 0 0   659
+ Element: 0 0   660
+ Element: 0 0   661
+ Element: 0 0   662
+ Element: 0 0   663
+ Element: 0 0   664
+ Element: 0 0   665
+ Element: 0 0   666
+ Element: 0 0   667
+ Element: 0 0   668
+ Element: 0 0   669
+ Element: 0 0   670
+ Element: 0 0   671
+ Element: 0 0   672
+ Element: 0 0   673
+ Element: 0 0   674
+ Element: 0 0   675
+ Element: 0 0   676
+ Element: 0 0   677
+ Element: 0 0   678
+ Element: 0 0   679
+ Element: 0 0   680
+ Element: 0 0   681
+ Element: 0 0   682
+ Element: 0 0   683
+ Element: 0 0   684
+ Element: 0 0   685
+ Element: 0 0   686
+ Element: 0 0   687
+ Element: 0 0   688
+ Element: 0 0   689
+ Element: 0 0   690
+ Element: 0 0   691
+ Element: 0 0   692
+ Element: 0 0   693
+ Element: 0 0   694
+ Element: 0 0   695
+ Element: 0 0   696
+ Element: 0 0   697
+ Element: 0 0   698
+ Element: 0 0   699
+ Element: 0 0   700
+ Element: 0 0   701
+ Element: 0 0   702
+ Element: 0 0   703
+ Element: 0 0   704
+ Element: 0 0   705
+ Element: 0 0   706
+ Element: 0 0   707
+ Element: 0 0   708
+ Element: 0 0   709
+ Element: 0 0   710
+ Element: 0 0   711
+ Element: 0 0   712
+ Element: 0 0   713
+ Element: 0 0   714
+ Element: 0 0   715
+ Element: 0 0   716
+ Element: 0 0   717
+ Element: 0 0   718
+ Element: 0 0   719
+ Element: 0 0   720
+ Element: 0 0   721
+ Element: 0 0   722
+ Element: 0 0   723
+ Element: 0 0   724
+ Element: 0 0   725
+ Element: 0 0   726
+ Element: 0 0   727
+ Element: 0 0   728
+ Element: 0 0   729
+ Element: 0 0   730
+ Element: 0 0   731
+ Element: 0 0   732
+ Element: 0 0   733
+ Element: 0 0   734
+ Element: 0 0   735
+ Element: 0 0   736
+ Element: 0 0   737
+ Element: 0 0   738
+ Element: 0 0   739
+ Element: 0 0   740
+ Element: 0 0   741
+ Element: 0 0   742
+ Element: 0 0   743
+ Element: 0 0   744
+ Element: 0 0   745
+ Element: 0 0   746
+ Element: 0 0   747
+ Element: 0 0   748
+ Element: 0 0   749
+ Element: 0 0   750
+ Element: 0 0   751
+ Element: 0 0   752
+ Element: 0 0   753
+ Element: 0 0   754
+ Element: 0 0   755
+ Element: 0 0   756
+ Element: 0 0   757
+ Element: 0 0   758
+ Element: 0 0   759
+ Element: 0 0   760
+ Element: 0 0   761
+ Element: 0 0   762
+ Element: 0 0   763
+ Element: 0 0   764
+ Element: 0 0   765
+ Element: 0 0   766
+ Element: 0 0   767
+ Element: 0 0   768
+ Element: 0 0   769
+ Element: 0 0   770
+ Element: 0 0   771
+ Element: 0 0   772
+ Element: 0 0   773
+ Element: 0 0   774
+ Element: 0 0   775
+ Element: 0 0   776
+ Element: 0 0   777
+ Element: 0 0   778
+ Element: 0 0   779
+ Element: 0 0   780
+ Element: 0 0   781
+ Element: 0 0   782
+ Element: 0 0   783
+ Element: 0 0   784
+ Element: 0 0   785
+ Element: 0 0   786
+ Element: 0 0   787
+ Element: 0 0   788
+ Element: 0 0   789
+ Element: 0 0   790
+ Element: 0 0   791
+ Element: 0 0   792
+ Element: 0 0   793
+ Element: 0 0   794
+ Element: 0 0   795
+ Element: 0 0   796
+ Element: 0 0   797
+ Element: 0 0   798
+ Element: 0 0   799
+ Element: 0 0   800
+ Element: 0 0   801
+ Element: 0 0   802
+ Element: 0 0   803
+ Element: 0 0   804
+ Element: 0 0   805
+ Element: 0 0   806
+ Element: 0 0   807
+ Element: 0 0   808
+ Element: 0 0   809
+ Element: 0 0   810
+ Element: 0 0   811
+ Element: 0 0   812
+ Element: 0 0   813
+ Element: 0 0   814
+ Element: 0 0   815
+ Element: 0 0   816
+ Element: 0 0   817
+ Element: 0 0   818
+ Element: 0 0   819
+ Element: 0 0   820
+ Element: 0 0   821
+ Element: 0 0   822
+ Element: 0 0   823
+ Element: 0 0   824
+ Element: 0 0   825
+ Element: 0 0   826
+ Element: 0 0   827
+ Element: 0 0   828
+ Element: 0 0   829
+ Element: 0 0   830
+ Element: 0 0   831
+ Element: 0 0   832
+ Element: 0 0   833
+ Element: 0 0   834
+ Element: 0 0   835
+ Element: 0 0   836
+ Element: 0 0   837
+ Element: 0 0   838
+ Element: 0 0   839
+ Element: 0 0   840
+ Element: 0 0   841
+ Element: 0 0   842
+ Element: 0 0   843
+ Element: 0 0   844
+ Element: 0 0   845
+ Element: 0 0   846
+ Element: 0 0   847
+ Element: 0 0   848
+ Element: 0 0   849
+ Element: 0 0   850
+ Element: 0 0   851
+ Element: 0 0   852
+ Element: 0 0   853
+ Element: 0 0   854
+ Element: 0 0   855
+ Element: 0 0   856
+ Element: 0 0   857
+ Element: 0 0   858
+ Element: 0 0   859
+ Element: 0 0   860
+ Element: 0 0   861
+ Element: 0 0   862
+ Element: 0 0   863
+ Element: 0 0   864
+ Element: 0 0   865
+ Element: 0 0   866
+ Element: 0 0   867
+ Element: 0 0   868
+ Element: 0 0   869
+ Element: 0 0   870
+ Element: 0 0   871
+ Element: 0 0   872
+ Element: 0 0   873
+ Element: 0 0   874
+ Element: 0 0   875
+ Element: 0 0   876
+ Element: 0 0   877
+ Element: 0 0   878
+ Element: 0 0   879
+ Element: 0 0   880
+ Element: 0 0   881
+ Element: 0 0   882
+ Element: 0 0   883
+ Element: 0 0   884
+ Element: 0 0   885
+ Element: 0 0   886
+ Element: 0 0   887
+ Element: 0 0   888
+ Element: 0 0   889
+ Element: 0 0   890
+ Element: 0 0   891
+ Element: 0 0   892
+ Element: 0 0   893
+ Element: 0 0   894
+ Element: 0 0   895
+ Element: 0 0   896
+ Element: 0 0   897
+ Element: 0 0   898
+ Element: 0 0   899
+ Element: 0 0   900
+ Element: 0 0   901
+ Element: 0 0   902
+ Element: 0 0   903
+ Element: 0 0   904
+ Element: 0 0   905
+ Element: 0 0   906
+ Element: 0 0   907
+ Element: 0 0   908
+ Element: 0 0   909
+ Element: 0 0   910
+ Element: 0 0   911
+ Element: 0 0   912
+ Element: 0 0   913
+ Element: 0 0   914
+ Element: 0 0   915
+ Element: 0 0   916
+ Element: 0 0   917
+ Element: 0 0   918
+ Element: 0 0   919
+ Element: 0 0   920
+ Element: 0 0   921
+ Element: 0 0   922
+ Element: 0 0   923
+ Element: 0 0   924
+ Element: 0 0   925
+ Element: 0 0   926
+ Element: 0 0   927
+ Element: 0 0   928
+ Element: 0 0   929
+ Element: 0 0   930
+ Element: 0 0   931
+ Element: 0 0   932
+ Element: 0 0   933
+ Element: 0 0   934
+ Element: 0 0   935
+ Element: 0 0   936
+ Element: 0 0   937
+ Element: 0 0   938
+ Element: 0 0   939
+ Element: 0 0   940
+ Element: 0 0   941
+ Element: 0 0   942
+ Element: 0 0   943
+ Element: 0 0   944
+ Element: 0 0   945
+ Element: 0 0   946
+ Element: 0 0   947
+ Element: 0 0   948
+ Element: 0 0   949
+ Element: 0 0   950
+ Element: 0 0   951
+ Element: 0 0   952
+ Element: 0 0   953
+ Element: 0 0   954
+ Element: 0 0   955
+ Element: 0 0   956
+ Element: 0 0   957
+ Element: 0 0   958
+ Element: 0 0   959
+ Element: 0 0   960
+ Element: 0 0   961
+ Element: 0 0   962
+ Element: 0 0   963
+ Element: 0 0   964
+ Element: 0 0   965
+ Element: 0 0   966
+ Element: 0 0   967
+ Element: 0 0   968
+ Element: 0 0   969
+ Element: 0 0   970
+ Element: 0 0   971
+ Element: 0 0   972
+ Shape. Dimension=2, line*line
+ #Scale factor sets=1
+ l.Lagrange*l.Lagrange, #Scale factors=4
+ #Nodes=  4
+ #Fields=1
+ 1) coordinates, coordinate, rectangular cartesian, #Components=3
+   x. l.Lagrange*l.Lagrange, no modify, standard node based.
+   #Nodes=4
+   1. #Values=1
+     Value indices:    1
+     Scale factor indices:    1
+   2. #Values=1
+     Value indices:    1
+     Scale factor indices:    2
+   3. #Values=1
+     Value indices:    1
+     Scale factor indices:    3
+   4. #Values=1
+     Value indices:    1
+     Scale factor indices:    4
+   y. l.Lagrange*l.Lagrange, no modify, standard node based.
+   #Nodes=4
+   1. #Values=1
+     Value indices:    1
+     Scale factor indices:    1
+   2. #Values=1
+     Value indices:    1
+     Scale factor indices:    2
+   3. #Values=1
+     Value indices:    1
+     Scale factor indices:    3
+   4. #Values=1
+     Value indices:    1
+     Scale factor indices:    4
+   z. l.Lagrange*l.Lagrange, no modify, standard node based.
+   #Nodes=4
+   1. #Values=1
+     Value indices:    1
+     Scale factor indices:    1
+   2. #Values=1
+     Value indices:    1
+     Scale factor indices:    2
+   3. #Values=1
+     Value indices:    1
+     Scale factor indices:    3
+   4. #Values=1
+     Value indices:    1
+     Scale factor indices:    4
+ Element:            1 0 0
+   Faces: 
+     0 0     1
+     0 0     2
+     0 0     3
+     0 0     0
+   Nodes:
+                6            5            1            1
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            2 0 0
+   Faces: 
+     0 0     4
+     0 0     5
+     0 0     6
+     0 0     0
+   Nodes:
+                6            2            1            1
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            3 0 0
+   Faces: 
+     0 0     7
+     0 0     8
+     0 0     9
+     0 0     0
+   Nodes:
+                7            6            2            2
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            4 0 0
+   Faces: 
+     0 0    10
+     0 0    11
+     0 0    12
+     0 0     0
+   Nodes:
+                7            3            2            2
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            5 0 0
+   Faces: 
+     0 0    13
+     0 0    14
+     0 0    15
+     0 0     0
+   Nodes:
+                8            7            3            3
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            6 0 0
+   Faces: 
+     0 0    16
+     0 0    17
+     0 0    18
+     0 0     0
+   Nodes:
+                8            4            3            3
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            7 0 0
+   Faces: 
+     0 0    19
+     0 0    20
+     0 0    21
+     0 0     0
+   Nodes:
+               10            9            5            5
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            8 0 0
+   Faces: 
+     0 0    22
+     0 0    23
+     0 0    24
+     0 0     0
+   Nodes:
+               10            6            5            5
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:            9 0 0
+   Faces: 
+     0 0    25
+     0 0    26
+     0 0    27
+     0 0     0
+   Nodes:
+               11           10            6            6
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           10 0 0
+   Faces: 
+     0 0    28
+     0 0    29
+     0 0    30
+     0 0     0
+   Nodes:
+               11            7            6            6
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           11 0 0
+   Faces: 
+     0 0    31
+     0 0    32
+     0 0    33
+     0 0     0
+   Nodes:
+               12           11            7            7
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           12 0 0
+   Faces: 
+     0 0    34
+     0 0    35
+     0 0    36
+     0 0     0
+   Nodes:
+               12            8            7            7
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           13 0 0
+   Faces: 
+     0 0    37
+     0 0    38
+     0 0    39
+     0 0     0
+   Nodes:
+               14           13            9            9
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           14 0 0
+   Faces: 
+     0 0    40
+     0 0    41
+     0 0    42
+     0 0     0
+   Nodes:
+               14           10            9            9
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           15 0 0
+   Faces: 
+     0 0    43
+     0 0    44
+     0 0    45
+     0 0     0
+   Nodes:
+               15           14           10           10
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           16 0 0
+   Faces: 
+     0 0    46
+     0 0    47
+     0 0    48
+     0 0     0
+   Nodes:
+               15           11           10           10
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           17 0 0
+   Faces: 
+     0 0    49
+     0 0    50
+     0 0    51
+     0 0     0
+   Nodes:
+               16           15           11           11
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           18 0 0
+   Faces: 
+     0 0    52
+     0 0    53
+     0 0    54
+     0 0     0
+   Nodes:
+               16           12           11           11
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           19 0 0
+   Faces: 
+     0 0    55
+     0 0    56
+     0 0    57
+     0 0     0
+   Nodes:
+               22           21           17           17
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           20 0 0
+   Faces: 
+     0 0    58
+     0 0    59
+     0 0    60
+     0 0     0
+   Nodes:
+               22           18           17           17
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           21 0 0
+   Faces: 
+     0 0    61
+     0 0    62
+     0 0    63
+     0 0     0
+   Nodes:
+               23           22           18           18
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           22 0 0
+   Faces: 
+     0 0    64
+     0 0    65
+     0 0    66
+     0 0     0
+   Nodes:
+               23           19           18           18
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           23 0 0
+   Faces: 
+     0 0    67
+     0 0    68
+     0 0    69
+     0 0     0
+   Nodes:
+               24           23           19           19
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           24 0 0
+   Faces: 
+     0 0    70
+     0 0    71
+     0 0    72
+     0 0     0
+   Nodes:
+               24           20           19           19
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           25 0 0
+   Faces: 
+     0 0    73
+     0 0    74
+     0 0    75
+     0 0     0
+   Nodes:
+               26           25           21           21
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           26 0 0
+   Faces: 
+     0 0    76
+     0 0    77
+     0 0    78
+     0 0     0
+   Nodes:
+               26           22           21           21
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           27 0 0
+   Faces: 
+     0 0    79
+     0 0    80
+     0 0    81
+     0 0     0
+   Nodes:
+               27           26           22           22
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           28 0 0
+   Faces: 
+     0 0    82
+     0 0    83
+     0 0    84
+     0 0     0
+   Nodes:
+               27           23           22           22
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           29 0 0
+   Faces: 
+     0 0    85
+     0 0    86
+     0 0    87
+     0 0     0
+   Nodes:
+               28           27           23           23
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           30 0 0
+   Faces: 
+     0 0    88
+     0 0    89
+     0 0    90
+     0 0     0
+   Nodes:
+               28           24           23           23
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           31 0 0
+   Faces: 
+     0 0    91
+     0 0    92
+     0 0    93
+     0 0     0
+   Nodes:
+               30           29           25           25
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           32 0 0
+   Faces: 
+     0 0    94
+     0 0    95
+     0 0    96
+     0 0     0
+   Nodes:
+               30           26           25           25
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           33 0 0
+   Faces: 
+     0 0    97
+     0 0    98
+     0 0    99
+     0 0     0
+   Nodes:
+               31           30           26           26
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           34 0 0
+   Faces: 
+     0 0   100
+     0 0   101
+     0 0   102
+     0 0     0
+   Nodes:
+               31           27           26           26
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           35 0 0
+   Faces: 
+     0 0   103
+     0 0   104
+     0 0   105
+     0 0     0
+   Nodes:
+               32           31           27           27
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           36 0 0
+   Faces: 
+     0 0   106
+     0 0   107
+     0 0   108
+     0 0     0
+   Nodes:
+               32           28           27           27
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           37 0 0
+   Faces: 
+     0 0   109
+     0 0   110
+     0 0   111
+     0 0     0
+   Nodes:
+               38           37           33           33
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           38 0 0
+   Faces: 
+     0 0   112
+     0 0   113
+     0 0   114
+     0 0     0
+   Nodes:
+               38           34           33           33
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           39 0 0
+   Faces: 
+     0 0   115
+     0 0   116
+     0 0   117
+     0 0     0
+   Nodes:
+               39           38           34           34
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           40 0 0
+   Faces: 
+     0 0   118
+     0 0   119
+     0 0   120
+     0 0     0
+   Nodes:
+               39           35           34           34
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           41 0 0
+   Faces: 
+     0 0   121
+     0 0   122
+     0 0   123
+     0 0     0
+   Nodes:
+               40           39           35           35
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           42 0 0
+   Faces: 
+     0 0   124
+     0 0   125
+     0 0   126
+     0 0     0
+   Nodes:
+               40           36           35           35
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           43 0 0
+   Faces: 
+     0 0   127
+     0 0   128
+     0 0   129
+     0 0     0
+   Nodes:
+               42           41           37           37
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           44 0 0
+   Faces: 
+     0 0   130
+     0 0   131
+     0 0   132
+     0 0     0
+   Nodes:
+               42           38           37           37
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           45 0 0
+   Faces: 
+     0 0   133
+     0 0   134
+     0 0   135
+     0 0     0
+   Nodes:
+               43           42           38           38
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           46 0 0
+   Faces: 
+     0 0   136
+     0 0   137
+     0 0   138
+     0 0     0
+   Nodes:
+               43           39           38           38
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           47 0 0
+   Faces: 
+     0 0   139
+     0 0   140
+     0 0   141
+     0 0     0
+   Nodes:
+               44           43           39           39
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           48 0 0
+   Faces: 
+     0 0   142
+     0 0   143
+     0 0   144
+     0 0     0
+   Nodes:
+               44           40           39           39
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           49 0 0
+   Faces: 
+     0 0   145
+     0 0   146
+     0 0   147
+     0 0     0
+   Nodes:
+               46           45           41           41
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           50 0 0
+   Faces: 
+     0 0   148
+     0 0   149
+     0 0   150
+     0 0     0
+   Nodes:
+               46           42           41           41
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           51 0 0
+   Faces: 
+     0 0   151
+     0 0   152
+     0 0   153
+     0 0     0
+   Nodes:
+               47           46           42           42
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           52 0 0
+   Faces: 
+     0 0   154
+     0 0   155
+     0 0   156
+     0 0     0
+   Nodes:
+               47           43           42           42
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           53 0 0
+   Faces: 
+     0 0   157
+     0 0   158
+     0 0   159
+     0 0     0
+   Nodes:
+               48           47           43           43
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           54 0 0
+   Faces: 
+     0 0   160
+     0 0   161
+     0 0   162
+     0 0     0
+   Nodes:
+               48           44           43           43
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           55 0 0
+   Faces: 
+     0 0   163
+     0 0   164
+     0 0   165
+     0 0     0
+   Nodes:
+               54           53           49           49
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           56 0 0
+   Faces: 
+     0 0   166
+     0 0   167
+     0 0   168
+     0 0     0
+   Nodes:
+               54           50           49           49
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           57 0 0
+   Faces: 
+     0 0   169
+     0 0   170
+     0 0   171
+     0 0     0
+   Nodes:
+               55           54           50           50
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           58 0 0
+   Faces: 
+     0 0   172
+     0 0   173
+     0 0   174
+     0 0     0
+   Nodes:
+               55           51           50           50
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           59 0 0
+   Faces: 
+     0 0   175
+     0 0   176
+     0 0   177
+     0 0     0
+   Nodes:
+               56           55           51           51
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           60 0 0
+   Faces: 
+     0 0   178
+     0 0   179
+     0 0   180
+     0 0     0
+   Nodes:
+               56           52           51           51
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           61 0 0
+   Faces: 
+     0 0   181
+     0 0   182
+     0 0   183
+     0 0     0
+   Nodes:
+               58           57           53           53
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           62 0 0
+   Faces: 
+     0 0   184
+     0 0   185
+     0 0   186
+     0 0     0
+   Nodes:
+               58           54           53           53
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           63 0 0
+   Faces: 
+     0 0   187
+     0 0   188
+     0 0   189
+     0 0     0
+   Nodes:
+               59           58           54           54
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           64 0 0
+   Faces: 
+     0 0   190
+     0 0   191
+     0 0   192
+     0 0     0
+   Nodes:
+               59           55           54           54
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           65 0 0
+   Faces: 
+     0 0   193
+     0 0   194
+     0 0   195
+     0 0     0
+   Nodes:
+               60           59           55           55
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           66 0 0
+   Faces: 
+     0 0   196
+     0 0   197
+     0 0   198
+     0 0     0
+   Nodes:
+               60           56           55           55
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           67 0 0
+   Faces: 
+     0 0   199
+     0 0   200
+     0 0   201
+     0 0     0
+   Nodes:
+               62           61           57           57
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           68 0 0
+   Faces: 
+     0 0   202
+     0 0   203
+     0 0   204
+     0 0     0
+   Nodes:
+               62           58           57           57
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           69 0 0
+   Faces: 
+     0 0   205
+     0 0   206
+     0 0   207
+     0 0     0
+   Nodes:
+               63           62           58           58
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           70 0 0
+   Faces: 
+     0 0   208
+     0 0   209
+     0 0   210
+     0 0     0
+   Nodes:
+               63           59           58           58
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           71 0 0
+   Faces: 
+     0 0   211
+     0 0   212
+     0 0   213
+     0 0     0
+   Nodes:
+               64           63           59           59
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           72 0 0
+   Faces: 
+     0 0   214
+     0 0   215
+     0 0   216
+     0 0     0
+   Nodes:
+               64           60           59           59
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           73 0 0
+   Faces: 
+     0 0   217
+     0 0   218
+     0 0   219
+     0 0     0
+   Nodes:
+               70           69           65           65
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           74 0 0
+   Faces: 
+     0 0   220
+     0 0   221
+     0 0   222
+     0 0     0
+   Nodes:
+               70           66           65           65
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           75 0 0
+   Faces: 
+     0 0   223
+     0 0   224
+     0 0   225
+     0 0     0
+   Nodes:
+               71           70           66           66
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           76 0 0
+   Faces: 
+     0 0   226
+     0 0   227
+     0 0   228
+     0 0     0
+   Nodes:
+               71           67           66           66
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           77 0 0
+   Faces: 
+     0 0   229
+     0 0   230
+     0 0   231
+     0 0     0
+   Nodes:
+               72           71           67           67
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           78 0 0
+   Faces: 
+     0 0   232
+     0 0   233
+     0 0   234
+     0 0     0
+   Nodes:
+               72           68           67           67
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           79 0 0
+   Faces: 
+     0 0   235
+     0 0   236
+     0 0   237
+     0 0     0
+   Nodes:
+               74           73           69           69
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           80 0 0
+   Faces: 
+     0 0   238
+     0 0   239
+     0 0   240
+     0 0     0
+   Nodes:
+               74           70           69           69
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           81 0 0
+   Faces: 
+     0 0   241
+     0 0   242
+     0 0   243
+     0 0     0
+   Nodes:
+               75           74           70           70
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           82 0 0
+   Faces: 
+     0 0   244
+     0 0   245
+     0 0   246
+     0 0     0
+   Nodes:
+               75           71           70           70
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           83 0 0
+   Faces: 
+     0 0   247
+     0 0   248
+     0 0   249
+     0 0     0
+   Nodes:
+               76           75           71           71
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           84 0 0
+   Faces: 
+     0 0   250
+     0 0   251
+     0 0   252
+     0 0     0
+   Nodes:
+               76           72           71           71
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           85 0 0
+   Faces: 
+     0 0   253
+     0 0   254
+     0 0   255
+     0 0     0
+   Nodes:
+               78           77           73           73
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           86 0 0
+   Faces: 
+     0 0   256
+     0 0   257
+     0 0   258
+     0 0     0
+   Nodes:
+               78           74           73           73
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           87 0 0
+   Faces: 
+     0 0   259
+     0 0   260
+     0 0   261
+     0 0     0
+   Nodes:
+               79           78           74           74
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           88 0 0
+   Faces: 
+     0 0   262
+     0 0   263
+     0 0   264
+     0 0     0
+   Nodes:
+               79           75           74           74
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           89 0 0
+   Faces: 
+     0 0   265
+     0 0   266
+     0 0   267
+     0 0     0
+   Nodes:
+               80           79           75           75
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           90 0 0
+   Faces: 
+     0 0   268
+     0 0   269
+     0 0   270
+     0 0     0
+   Nodes:
+               80           76           75           75
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           91 0 0
+   Faces: 
+     0 0   271
+     0 0   272
+     0 0   273
+     0 0     0
+   Nodes:
+               86           85           81           81
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           92 0 0
+   Faces: 
+     0 0   274
+     0 0   275
+     0 0   276
+     0 0     0
+   Nodes:
+               86           82           81           81
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           93 0 0
+   Faces: 
+     0 0   277
+     0 0   278
+     0 0   279
+     0 0     0
+   Nodes:
+               87           86           82           82
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           94 0 0
+   Faces: 
+     0 0   280
+     0 0   281
+     0 0   282
+     0 0     0
+   Nodes:
+               87           83           82           82
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           95 0 0
+   Faces: 
+     0 0   283
+     0 0   284
+     0 0   285
+     0 0     0
+   Nodes:
+               88           87           83           83
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           96 0 0
+   Faces: 
+     0 0   286
+     0 0   287
+     0 0   288
+     0 0     0
+   Nodes:
+               88           84           83           83
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           97 0 0
+   Faces: 
+     0 0   289
+     0 0   290
+     0 0   291
+     0 0     0
+   Nodes:
+               90           89           85           85
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           98 0 0
+   Faces: 
+     0 0   292
+     0 0   293
+     0 0   294
+     0 0     0
+   Nodes:
+               90           86           85           85
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:           99 0 0
+   Faces: 
+     0 0   295
+     0 0   296
+     0 0   297
+     0 0     0
+   Nodes:
+               91           90           86           86
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          100 0 0
+   Faces: 
+     0 0   298
+     0 0   299
+     0 0   300
+     0 0     0
+   Nodes:
+               91           87           86           86
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          101 0 0
+   Faces: 
+     0 0   301
+     0 0   302
+     0 0   303
+     0 0     0
+   Nodes:
+               92           91           87           87
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          102 0 0
+   Faces: 
+     0 0   304
+     0 0   305
+     0 0   306
+     0 0     0
+   Nodes:
+               92           88           87           87
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          103 0 0
+   Faces: 
+     0 0   307
+     0 0   308
+     0 0   309
+     0 0     0
+   Nodes:
+               94           93           89           89
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          104 0 0
+   Faces: 
+     0 0   310
+     0 0   311
+     0 0   312
+     0 0     0
+   Nodes:
+               94           90           89           89
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          105 0 0
+   Faces: 
+     0 0   313
+     0 0   314
+     0 0   315
+     0 0     0
+   Nodes:
+               95           94           90           90
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          106 0 0
+   Faces: 
+     0 0   316
+     0 0   317
+     0 0   318
+     0 0     0
+   Nodes:
+               95           91           90           90
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          107 0 0
+   Faces: 
+     0 0   319
+     0 0   320
+     0 0   321
+     0 0     0
+   Nodes:
+               96           95           91           91
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          108 0 0
+   Faces: 
+     0 0   322
+     0 0   323
+     0 0   324
+     0 0     0
+   Nodes:
+               96           92           91           91
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          109 0 0
+   Faces: 
+     0 0   325
+     0 0   326
+     0 0   327
+     0 0     0
+   Nodes:
+              102          101           97           97
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          110 0 0
+   Faces: 
+     0 0   328
+     0 0   329
+     0 0   330
+     0 0     0
+   Nodes:
+              102           98           97           97
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          111 0 0
+   Faces: 
+     0 0   331
+     0 0   332
+     0 0   333
+     0 0     0
+   Nodes:
+              103          102           98           98
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          112 0 0
+   Faces: 
+     0 0   334
+     0 0   335
+     0 0   336
+     0 0     0
+   Nodes:
+              103           99           98           98
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          113 0 0
+   Faces: 
+     0 0   337
+     0 0   338
+     0 0   339
+     0 0     0
+   Nodes:
+              104          103           99           99
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          114 0 0
+   Faces: 
+     0 0   340
+     0 0   341
+     0 0   342
+     0 0     0
+   Nodes:
+              104          100           99           99
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          115 0 0
+   Faces: 
+     0 0   343
+     0 0   344
+     0 0   345
+     0 0     0
+   Nodes:
+              106          105          101          101
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          116 0 0
+   Faces: 
+     0 0   346
+     0 0   347
+     0 0   348
+     0 0     0
+   Nodes:
+              106          102          101          101
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          117 0 0
+   Faces: 
+     0 0   349
+     0 0   350
+     0 0   351
+     0 0     0
+   Nodes:
+              107          106          102          102
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          118 0 0
+   Faces: 
+     0 0   352
+     0 0   353
+     0 0   354
+     0 0     0
+   Nodes:
+              107          103          102          102
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          119 0 0
+   Faces: 
+     0 0   355
+     0 0   356
+     0 0   357
+     0 0     0
+   Nodes:
+              108          107          103          103
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          120 0 0
+   Faces: 
+     0 0   358
+     0 0   359
+     0 0   360
+     0 0     0
+   Nodes:
+              108          104          103          103
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          121 0 0
+   Faces: 
+     0 0   361
+     0 0   362
+     0 0   363
+     0 0     0
+   Nodes:
+              110          109          105          105
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          122 0 0
+   Faces: 
+     0 0   364
+     0 0   365
+     0 0   366
+     0 0     0
+   Nodes:
+              110          106          105          105
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          123 0 0
+   Faces: 
+     0 0   367
+     0 0   368
+     0 0   369
+     0 0     0
+   Nodes:
+              111          110          106          106
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          124 0 0
+   Faces: 
+     0 0   370
+     0 0   371
+     0 0   372
+     0 0     0
+   Nodes:
+              111          107          106          106
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          125 0 0
+   Faces: 
+     0 0   373
+     0 0   374
+     0 0   375
+     0 0     0
+   Nodes:
+              112          111          107          107
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          126 0 0
+   Faces: 
+     0 0   376
+     0 0   377
+     0 0   378
+     0 0     0
+   Nodes:
+              112          108          107          107
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          127 0 0
+   Faces: 
+     0 0   379
+     0 0   380
+     0 0   381
+     0 0     0
+   Nodes:
+              115          114          113          113
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          128 0 0
+   Faces: 
+     0 0   382
+     0 0   383
+     0 0   384
+     0 0     0
+   Nodes:
+              117          116          114          114
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          129 0 0
+   Faces: 
+     0 0   385
+     0 0   386
+     0 0   387
+     0 0     0
+   Nodes:
+              117          115          114          114
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          130 0 0
+   Faces: 
+     0 0   388
+     0 0   389
+     0 0   390
+     0 0     0
+   Nodes:
+              118          117          115          115
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          131 0 0
+   Faces: 
+     0 0   391
+     0 0   392
+     0 0   393
+     0 0     0
+   Nodes:
+              120          119          116          116
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          132 0 0
+   Faces: 
+     0 0   394
+     0 0   395
+     0 0   396
+     0 0     0
+   Nodes:
+              120          117          116          116
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          133 0 0
+   Faces: 
+     0 0   397
+     0 0   398
+     0 0   399
+     0 0     0
+   Nodes:
+              121          120          117          117
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          134 0 0
+   Faces: 
+     0 0   400
+     0 0   401
+     0 0   402
+     0 0     0
+   Nodes:
+              121          118          117          117
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          135 0 0
+   Faces: 
+     0 0   403
+     0 0   404
+     0 0   405
+     0 0     0
+   Nodes:
+              122          121          118          118
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          136 0 0
+   Faces: 
+     0 0   406
+     0 0   407
+     0 0   408
+     0 0     0
+   Nodes:
+              128          127          123          123
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          137 0 0
+   Faces: 
+     0 0   409
+     0 0   410
+     0 0   411
+     0 0     0
+   Nodes:
+              128          124          123          123
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          138 0 0
+   Faces: 
+     0 0   412
+     0 0   413
+     0 0   414
+     0 0     0
+   Nodes:
+              129          128          124          124
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          139 0 0
+   Faces: 
+     0 0   415
+     0 0   416
+     0 0   417
+     0 0     0
+   Nodes:
+              129          125          124          124
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          140 0 0
+   Faces: 
+     0 0   418
+     0 0   419
+     0 0   420
+     0 0     0
+   Nodes:
+              130          129          125          125
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          141 0 0
+   Faces: 
+     0 0   421
+     0 0   422
+     0 0   423
+     0 0     0
+   Nodes:
+              130          126          125          125
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          142 0 0
+   Faces: 
+     0 0   424
+     0 0   425
+     0 0   426
+     0 0     0
+   Nodes:
+              132          131          127          127
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          143 0 0
+   Faces: 
+     0 0   427
+     0 0   428
+     0 0   429
+     0 0     0
+   Nodes:
+              132          128          127          127
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          144 0 0
+   Faces: 
+     0 0   430
+     0 0   431
+     0 0   432
+     0 0     0
+   Nodes:
+              133          132          128          128
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          145 0 0
+   Faces: 
+     0 0   433
+     0 0   434
+     0 0   435
+     0 0     0
+   Nodes:
+              133          129          128          128
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          146 0 0
+   Faces: 
+     0 0   436
+     0 0   437
+     0 0   438
+     0 0     0
+   Nodes:
+              134          133          129          129
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          147 0 0
+   Faces: 
+     0 0   439
+     0 0   440
+     0 0   441
+     0 0     0
+   Nodes:
+              134          130          129          129
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          148 0 0
+   Faces: 
+     0 0   442
+     0 0   443
+     0 0   444
+     0 0     0
+   Nodes:
+              136          135          131          131
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          149 0 0
+   Faces: 
+     0 0   445
+     0 0   446
+     0 0   447
+     0 0     0
+   Nodes:
+              136          132          131          131
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          150 0 0
+   Faces: 
+     0 0   448
+     0 0   449
+     0 0   450
+     0 0     0
+   Nodes:
+              137          136          132          132
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          151 0 0
+   Faces: 
+     0 0   451
+     0 0   452
+     0 0   453
+     0 0     0
+   Nodes:
+              137          133          132          132
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          152 0 0
+   Faces: 
+     0 0   454
+     0 0   455
+     0 0   456
+     0 0     0
+   Nodes:
+              138          137          133          133
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          153 0 0
+   Faces: 
+     0 0   457
+     0 0   458
+     0 0   459
+     0 0     0
+   Nodes:
+              138          134          133          133
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          154 0 0
+   Faces: 
+     0 0   460
+     0 0   461
+     0 0   462
+     0 0     0
+   Nodes:
+              141          140          139          139
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          155 0 0
+   Faces: 
+     0 0   463
+     0 0   464
+     0 0   465
+     0 0     0
+   Nodes:
+              143          142          140          140
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          156 0 0
+   Faces: 
+     0 0   466
+     0 0   467
+     0 0   468
+     0 0     0
+   Nodes:
+              143          141          140          140
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          157 0 0
+   Faces: 
+     0 0   469
+     0 0   470
+     0 0   471
+     0 0     0
+   Nodes:
+              144          143          141          141
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          158 0 0
+   Faces: 
+     0 0   472
+     0 0   473
+     0 0   474
+     0 0     0
+   Nodes:
+              146          145          142          142
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          159 0 0
+   Faces: 
+     0 0   475
+     0 0   476
+     0 0   477
+     0 0     0
+   Nodes:
+              146          143          142          142
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          160 0 0
+   Faces: 
+     0 0   478
+     0 0   479
+     0 0   480
+     0 0     0
+   Nodes:
+              147          146          143          143
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          161 0 0
+   Faces: 
+     0 0   481
+     0 0   482
+     0 0   483
+     0 0     0
+   Nodes:
+              147          144          143          143
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          162 0 0
+   Faces: 
+     0 0   484
+     0 0   485
+     0 0   486
+     0 0     0
+   Nodes:
+              148          147          144          144
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          163 0 0
+   Faces: 
+     0 0   487
+     0 0   488
+     0 0   489
+     0 0     0
+   Nodes:
+              154          153          149          149
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          164 0 0
+   Faces: 
+     0 0   490
+     0 0   491
+     0 0   492
+     0 0     0
+   Nodes:
+              154          150          149          149
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          165 0 0
+   Faces: 
+     0 0   493
+     0 0   494
+     0 0   495
+     0 0     0
+   Nodes:
+              155          154          150          150
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          166 0 0
+   Faces: 
+     0 0   496
+     0 0   497
+     0 0   498
+     0 0     0
+   Nodes:
+              155          151          150          150
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          167 0 0
+   Faces: 
+     0 0   499
+     0 0   500
+     0 0   501
+     0 0     0
+   Nodes:
+              156          155          151          151
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          168 0 0
+   Faces: 
+     0 0   502
+     0 0   503
+     0 0   504
+     0 0     0
+   Nodes:
+              156          152          151          151
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          169 0 0
+   Faces: 
+     0 0   505
+     0 0   506
+     0 0   507
+     0 0     0
+   Nodes:
+              158          157          153          153
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          170 0 0
+   Faces: 
+     0 0   508
+     0 0   509
+     0 0   510
+     0 0     0
+   Nodes:
+              158          154          153          153
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          171 0 0
+   Faces: 
+     0 0   511
+     0 0   512
+     0 0   513
+     0 0     0
+   Nodes:
+              159          158          154          154
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          172 0 0
+   Faces: 
+     0 0   514
+     0 0   515
+     0 0   516
+     0 0     0
+   Nodes:
+              159          155          154          154
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          173 0 0
+   Faces: 
+     0 0   517
+     0 0   518
+     0 0   519
+     0 0     0
+   Nodes:
+              160          159          155          155
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          174 0 0
+   Faces: 
+     0 0   520
+     0 0   521
+     0 0   522
+     0 0     0
+   Nodes:
+              160          156          155          155
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          175 0 0
+   Faces: 
+     0 0   523
+     0 0   524
+     0 0   525
+     0 0     0
+   Nodes:
+              162          161          157          157
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          176 0 0
+   Faces: 
+     0 0   526
+     0 0   527
+     0 0   528
+     0 0     0
+   Nodes:
+              162          158          157          157
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          177 0 0
+   Faces: 
+     0 0   529
+     0 0   530
+     0 0   531
+     0 0     0
+   Nodes:
+              163          162          158          158
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          178 0 0
+   Faces: 
+     0 0   532
+     0 0   533
+     0 0   534
+     0 0     0
+   Nodes:
+              163          159          158          158
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          179 0 0
+   Faces: 
+     0 0   535
+     0 0   536
+     0 0   537
+     0 0     0
+   Nodes:
+              164          163          159          159
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          180 0 0
+   Faces: 
+     0 0   538
+     0 0   539
+     0 0   540
+     0 0     0
+   Nodes:
+              164          160          159          159
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          181 0 0
+   Faces: 
+     0 0   541
+     0 0   542
+     0 0   543
+     0 0     0
+   Nodes:
+              170          169          165          165
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          182 0 0
+   Faces: 
+     0 0   544
+     0 0   545
+     0 0   546
+     0 0     0
+   Nodes:
+              170          166          165          165
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          183 0 0
+   Faces: 
+     0 0   547
+     0 0   548
+     0 0   549
+     0 0     0
+   Nodes:
+              171          170          166          166
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          184 0 0
+   Faces: 
+     0 0   550
+     0 0   551
+     0 0   552
+     0 0     0
+   Nodes:
+              171          167          166          166
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          185 0 0
+   Faces: 
+     0 0   553
+     0 0   554
+     0 0   555
+     0 0     0
+   Nodes:
+              172          171          167          167
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          186 0 0
+   Faces: 
+     0 0   556
+     0 0   557
+     0 0   558
+     0 0     0
+   Nodes:
+              172          168          167          167
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          187 0 0
+   Faces: 
+     0 0   559
+     0 0   560
+     0 0   561
+     0 0     0
+   Nodes:
+              174          173          169          169
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          188 0 0
+   Faces: 
+     0 0   562
+     0 0   563
+     0 0   564
+     0 0     0
+   Nodes:
+              174          170          169          169
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          189 0 0
+   Faces: 
+     0 0   565
+     0 0   566
+     0 0   567
+     0 0     0
+   Nodes:
+              175          174          170          170
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          190 0 0
+   Faces: 
+     0 0   568
+     0 0   569
+     0 0   570
+     0 0     0
+   Nodes:
+              175          171          170          170
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          191 0 0
+   Faces: 
+     0 0   571
+     0 0   572
+     0 0   573
+     0 0     0
+   Nodes:
+              176          175          171          171
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          192 0 0
+   Faces: 
+     0 0   574
+     0 0   575
+     0 0   576
+     0 0     0
+   Nodes:
+              176          172          171          171
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          193 0 0
+   Faces: 
+     0 0   577
+     0 0   578
+     0 0   579
+     0 0     0
+   Nodes:
+              178          177          173          173
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          194 0 0
+   Faces: 
+     0 0   580
+     0 0   581
+     0 0   582
+     0 0     0
+   Nodes:
+              178          174          173          173
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          195 0 0
+   Faces: 
+     0 0   583
+     0 0   584
+     0 0   585
+     0 0     0
+   Nodes:
+              179          178          174          174
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          196 0 0
+   Faces: 
+     0 0   586
+     0 0   587
+     0 0   588
+     0 0     0
+   Nodes:
+              179          175          174          174
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          197 0 0
+   Faces: 
+     0 0   589
+     0 0   590
+     0 0   591
+     0 0     0
+   Nodes:
+              180          179          175          175
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          198 0 0
+   Faces: 
+     0 0   592
+     0 0   593
+     0 0   594
+     0 0     0
+   Nodes:
+              180          176          175          175
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          199 0 0
+   Faces: 
+     0 0   595
+     0 0   596
+     0 0   597
+     0 0     0
+   Nodes:
+              186          185          181          181
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          200 0 0
+   Faces: 
+     0 0   598
+     0 0   599
+     0 0   600
+     0 0     0
+   Nodes:
+              186          182          181          181
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          201 0 0
+   Faces: 
+     0 0   601
+     0 0   602
+     0 0   603
+     0 0     0
+   Nodes:
+              187          186          182          182
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          202 0 0
+   Faces: 
+     0 0   604
+     0 0   605
+     0 0   606
+     0 0     0
+   Nodes:
+              187          183          182          182
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          203 0 0
+   Faces: 
+     0 0   607
+     0 0   608
+     0 0   609
+     0 0     0
+   Nodes:
+              188          187          183          183
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          204 0 0
+   Faces: 
+     0 0   610
+     0 0   611
+     0 0   612
+     0 0     0
+   Nodes:
+              188          184          183          183
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          205 0 0
+   Faces: 
+     0 0   613
+     0 0   614
+     0 0   615
+     0 0     0
+   Nodes:
+              190          189          185          185
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          206 0 0
+   Faces: 
+     0 0   616
+     0 0   617
+     0 0   618
+     0 0     0
+   Nodes:
+              190          186          185          185
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          207 0 0
+   Faces: 
+     0 0   619
+     0 0   620
+     0 0   621
+     0 0     0
+   Nodes:
+              191          190          186          186
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          208 0 0
+   Faces: 
+     0 0   622
+     0 0   623
+     0 0   624
+     0 0     0
+   Nodes:
+              191          187          186          186
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          209 0 0
+   Faces: 
+     0 0   625
+     0 0   626
+     0 0   627
+     0 0     0
+   Nodes:
+              192          191          187          187
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          210 0 0
+   Faces: 
+     0 0   628
+     0 0   629
+     0 0   630
+     0 0     0
+   Nodes:
+              192          188          187          187
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          211 0 0
+   Faces: 
+     0 0   631
+     0 0   632
+     0 0   633
+     0 0     0
+   Nodes:
+              194          193          189          189
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          212 0 0
+   Faces: 
+     0 0   634
+     0 0   635
+     0 0   636
+     0 0     0
+   Nodes:
+              194          190          189          189
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          213 0 0
+   Faces: 
+     0 0   637
+     0 0   638
+     0 0   639
+     0 0     0
+   Nodes:
+              195          194          190          190
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          214 0 0
+   Faces: 
+     0 0   640
+     0 0   641
+     0 0   642
+     0 0     0
+   Nodes:
+              195          191          190          190
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          215 0 0
+   Faces: 
+     0 0   643
+     0 0   644
+     0 0   645
+     0 0     0
+   Nodes:
+              196          195          191          191
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          216 0 0
+   Faces: 
+     0 0   646
+     0 0   647
+     0 0   648
+     0 0     0
+   Nodes:
+              196          192          191          191
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          217 0 0
+   Faces: 
+     0 0   649
+     0 0   650
+     0 0   651
+     0 0     0
+   Nodes:
+              202          201          197          197
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          218 0 0
+   Faces: 
+     0 0   652
+     0 0   653
+     0 0   654
+     0 0     0
+   Nodes:
+              202          198          197          197
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          219 0 0
+   Faces: 
+     0 0   655
+     0 0   656
+     0 0   657
+     0 0     0
+   Nodes:
+              203          202          198          198
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          220 0 0
+   Faces: 
+     0 0   658
+     0 0   659
+     0 0   660
+     0 0     0
+   Nodes:
+              203          199          198          198
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          221 0 0
+   Faces: 
+     0 0   661
+     0 0   662
+     0 0   663
+     0 0     0
+   Nodes:
+              204          203          199          199
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          222 0 0
+   Faces: 
+     0 0   664
+     0 0   665
+     0 0   666
+     0 0     0
+   Nodes:
+              204          200          199          199
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          223 0 0
+   Faces: 
+     0 0   667
+     0 0   668
+     0 0   669
+     0 0     0
+   Nodes:
+              206          205          201          201
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          224 0 0
+   Faces: 
+     0 0   670
+     0 0   671
+     0 0   672
+     0 0     0
+   Nodes:
+              206          202          201          201
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          225 0 0
+   Faces: 
+     0 0   673
+     0 0   674
+     0 0   675
+     0 0     0
+   Nodes:
+              207          206          202          202
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          226 0 0
+   Faces: 
+     0 0   676
+     0 0   677
+     0 0   678
+     0 0     0
+   Nodes:
+              207          203          202          202
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          227 0 0
+   Faces: 
+     0 0   679
+     0 0   680
+     0 0   681
+     0 0     0
+   Nodes:
+              208          207          203          203
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          228 0 0
+   Faces: 
+     0 0   682
+     0 0   683
+     0 0   684
+     0 0     0
+   Nodes:
+              208          204          203          203
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          229 0 0
+   Faces: 
+     0 0   685
+     0 0   686
+     0 0   687
+     0 0     0
+   Nodes:
+              210          209          205          205
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          230 0 0
+   Faces: 
+     0 0   688
+     0 0   689
+     0 0   690
+     0 0     0
+   Nodes:
+              210          206          205          205
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          231 0 0
+   Faces: 
+     0 0   691
+     0 0   692
+     0 0   693
+     0 0     0
+   Nodes:
+              211          210          206          206
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          232 0 0
+   Faces: 
+     0 0   694
+     0 0   695
+     0 0   696
+     0 0     0
+   Nodes:
+              211          207          206          206
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          233 0 0
+   Faces: 
+     0 0   697
+     0 0   698
+     0 0   699
+     0 0     0
+   Nodes:
+              212          211          207          207
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          234 0 0
+   Faces: 
+     0 0   700
+     0 0   701
+     0 0   702
+     0 0     0
+   Nodes:
+              212          208          207          207
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          235 0 0
+   Faces: 
+     0 0   703
+     0 0   704
+     0 0   705
+     0 0     0
+   Nodes:
+              218          217          213          213
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          236 0 0
+   Faces: 
+     0 0   706
+     0 0   707
+     0 0   708
+     0 0     0
+   Nodes:
+              218          214          213          213
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          237 0 0
+   Faces: 
+     0 0   709
+     0 0   710
+     0 0   711
+     0 0     0
+   Nodes:
+              219          218          214          214
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          238 0 0
+   Faces: 
+     0 0   712
+     0 0   713
+     0 0   714
+     0 0     0
+   Nodes:
+              219          215          214          214
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          239 0 0
+   Faces: 
+     0 0   715
+     0 0   716
+     0 0   717
+     0 0     0
+   Nodes:
+              220          219          215          215
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          240 0 0
+   Faces: 
+     0 0   718
+     0 0   719
+     0 0   720
+     0 0     0
+   Nodes:
+              220          216          215          215
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          241 0 0
+   Faces: 
+     0 0   721
+     0 0   722
+     0 0   723
+     0 0     0
+   Nodes:
+              222          221          217          217
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          242 0 0
+   Faces: 
+     0 0   724
+     0 0   725
+     0 0   726
+     0 0     0
+   Nodes:
+              222          218          217          217
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          243 0 0
+   Faces: 
+     0 0   727
+     0 0   728
+     0 0   729
+     0 0     0
+   Nodes:
+              223          222          218          218
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          244 0 0
+   Faces: 
+     0 0   730
+     0 0   731
+     0 0   732
+     0 0     0
+   Nodes:
+              223          219          218          218
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          245 0 0
+   Faces: 
+     0 0   733
+     0 0   734
+     0 0   735
+     0 0     0
+   Nodes:
+              224          223          219          219
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          246 0 0
+   Faces: 
+     0 0   736
+     0 0   737
+     0 0   738
+     0 0     0
+   Nodes:
+              224          220          219          219
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          247 0 0
+   Faces: 
+     0 0   739
+     0 0   740
+     0 0   741
+     0 0     0
+   Nodes:
+              226          225          221          221
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          248 0 0
+   Faces: 
+     0 0   742
+     0 0   743
+     0 0   744
+     0 0     0
+   Nodes:
+              226          222          221          221
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          249 0 0
+   Faces: 
+     0 0   745
+     0 0   746
+     0 0   747
+     0 0     0
+   Nodes:
+              227          226          222          222
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          250 0 0
+   Faces: 
+     0 0   748
+     0 0   749
+     0 0   750
+     0 0     0
+   Nodes:
+              227          223          222          222
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          251 0 0
+   Faces: 
+     0 0   751
+     0 0   752
+     0 0   753
+     0 0     0
+   Nodes:
+              228          227          223          223
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          252 0 0
+   Faces: 
+     0 0   754
+     0 0   755
+     0 0   756
+     0 0     0
+   Nodes:
+              228          224          223          223
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          253 0 0
+   Faces: 
+     0 0   757
+     0 0   758
+     0 0   759
+     0 0     0
+   Nodes:
+              231          230          229          229
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          254 0 0
+   Faces: 
+     0 0   760
+     0 0   761
+     0 0   762
+     0 0     0
+   Nodes:
+              233          232          230          230
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          255 0 0
+   Faces: 
+     0 0   763
+     0 0   764
+     0 0   765
+     0 0     0
+   Nodes:
+              233          231          230          230
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          256 0 0
+   Faces: 
+     0 0   766
+     0 0   767
+     0 0   768
+     0 0     0
+   Nodes:
+              234          233          231          231
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          257 0 0
+   Faces: 
+     0 0   769
+     0 0   770
+     0 0   771
+     0 0     0
+   Nodes:
+              236          235          232          232
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          258 0 0
+   Faces: 
+     0 0   772
+     0 0   773
+     0 0   774
+     0 0     0
+   Nodes:
+              236          233          232          232
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          259 0 0
+   Faces: 
+     0 0   775
+     0 0   776
+     0 0   777
+     0 0     0
+   Nodes:
+              237          236          233          233
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          260 0 0
+   Faces: 
+     0 0   778
+     0 0   779
+     0 0   780
+     0 0     0
+   Nodes:
+              237          234          233          233
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          261 0 0
+   Faces: 
+     0 0   781
+     0 0   782
+     0 0   783
+     0 0     0
+   Nodes:
+              238          237          234          234
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          262 0 0
+   Faces: 
+     0 0   784
+     0 0   785
+     0 0   786
+     0 0     0
+   Nodes:
+              244          243          239          239
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          263 0 0
+   Faces: 
+     0 0   787
+     0 0   788
+     0 0   789
+     0 0     0
+   Nodes:
+              244          240          239          239
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          264 0 0
+   Faces: 
+     0 0   790
+     0 0   791
+     0 0   792
+     0 0     0
+   Nodes:
+              245          244          240          240
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          265 0 0
+   Faces: 
+     0 0   793
+     0 0   794
+     0 0   795
+     0 0     0
+   Nodes:
+              245          241          240          240
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          266 0 0
+   Faces: 
+     0 0   796
+     0 0   797
+     0 0   798
+     0 0     0
+   Nodes:
+              246          245          241          241
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          267 0 0
+   Faces: 
+     0 0   799
+     0 0   800
+     0 0   801
+     0 0     0
+   Nodes:
+              246          242          241          241
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          268 0 0
+   Faces: 
+     0 0   802
+     0 0   803
+     0 0   804
+     0 0     0
+   Nodes:
+              248          247          243          243
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          269 0 0
+   Faces: 
+     0 0   805
+     0 0   806
+     0 0   807
+     0 0     0
+   Nodes:
+              248          244          243          243
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          270 0 0
+   Faces: 
+     0 0   808
+     0 0   809
+     0 0   810
+     0 0     0
+   Nodes:
+              249          248          244          244
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          271 0 0
+   Faces: 
+     0 0   811
+     0 0   812
+     0 0   813
+     0 0     0
+   Nodes:
+              249          245          244          244
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          272 0 0
+   Faces: 
+     0 0   814
+     0 0   815
+     0 0   816
+     0 0     0
+   Nodes:
+              250          249          245          245
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          273 0 0
+   Faces: 
+     0 0   817
+     0 0   818
+     0 0   819
+     0 0     0
+   Nodes:
+              250          246          245          245
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          274 0 0
+   Faces: 
+     0 0   820
+     0 0   821
+     0 0   822
+     0 0     0
+   Nodes:
+              252          251          247          247
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          275 0 0
+   Faces: 
+     0 0   823
+     0 0   824
+     0 0   825
+     0 0     0
+   Nodes:
+              252          248          247          247
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          276 0 0
+   Faces: 
+     0 0   826
+     0 0   827
+     0 0   828
+     0 0     0
+   Nodes:
+              253          252          248          248
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          277 0 0
+   Faces: 
+     0 0   829
+     0 0   830
+     0 0   831
+     0 0     0
+   Nodes:
+              253          249          248          248
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          278 0 0
+   Faces: 
+     0 0   832
+     0 0   833
+     0 0   834
+     0 0     0
+   Nodes:
+              254          253          249          249
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          279 0 0
+   Faces: 
+     0 0   835
+     0 0   836
+     0 0   837
+     0 0     0
+   Nodes:
+              254          250          249          249
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          280 0 0
+   Faces: 
+     0 0   838
+     0 0   839
+     0 0   840
+     0 0     0
+   Nodes:
+              257          256          255          255
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          281 0 0
+   Faces: 
+     0 0   841
+     0 0   842
+     0 0   843
+     0 0     0
+   Nodes:
+              259          258          256          256
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          282 0 0
+   Faces: 
+     0 0   844
+     0 0   845
+     0 0   846
+     0 0     0
+   Nodes:
+              259          257          256          256
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          283 0 0
+   Faces: 
+     0 0   847
+     0 0   848
+     0 0   849
+     0 0     0
+   Nodes:
+              260          259          257          257
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          284 0 0
+   Faces: 
+     0 0   850
+     0 0   851
+     0 0   852
+     0 0     0
+   Nodes:
+              262          261          258          258
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          285 0 0
+   Faces: 
+     0 0   853
+     0 0   854
+     0 0   855
+     0 0     0
+   Nodes:
+              262          259          258          258
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          286 0 0
+   Faces: 
+     0 0   856
+     0 0   857
+     0 0   858
+     0 0     0
+   Nodes:
+              263          262          259          259
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          287 0 0
+   Faces: 
+     0 0   859
+     0 0   860
+     0 0   861
+     0 0     0
+   Nodes:
+              263          260          259          259
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          288 0 0
+   Faces: 
+     0 0   862
+     0 0   863
+     0 0   864
+     0 0     0
+   Nodes:
+              264          263          260          260
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          289 0 0
+   Faces: 
+     0 0   865
+     0 0   866
+     0 0   867
+     0 0     0
+   Nodes:
+              270          269          265          265
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          290 0 0
+   Faces: 
+     0 0   868
+     0 0   869
+     0 0   870
+     0 0     0
+   Nodes:
+              270          266          265          265
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          291 0 0
+   Faces: 
+     0 0   871
+     0 0   872
+     0 0   873
+     0 0     0
+   Nodes:
+              271          270          266          266
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          292 0 0
+   Faces: 
+     0 0   874
+     0 0   875
+     0 0   876
+     0 0     0
+   Nodes:
+              271          267          266          266
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          293 0 0
+   Faces: 
+     0 0   877
+     0 0   878
+     0 0   879
+     0 0     0
+   Nodes:
+              272          271          267          267
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          294 0 0
+   Faces: 
+     0 0   880
+     0 0   881
+     0 0   882
+     0 0     0
+   Nodes:
+              272          268          267          267
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          295 0 0
+   Faces: 
+     0 0   883
+     0 0   884
+     0 0   885
+     0 0     0
+   Nodes:
+              274          273          269          269
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          296 0 0
+   Faces: 
+     0 0   886
+     0 0   887
+     0 0   888
+     0 0     0
+   Nodes:
+              274          270          269          269
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          297 0 0
+   Faces: 
+     0 0   889
+     0 0   890
+     0 0   891
+     0 0     0
+   Nodes:
+              275          274          270          270
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          298 0 0
+   Faces: 
+     0 0   892
+     0 0   893
+     0 0   894
+     0 0     0
+   Nodes:
+              275          271          270          270
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          299 0 0
+   Faces: 
+     0 0   895
+     0 0   896
+     0 0   897
+     0 0     0
+   Nodes:
+              276          275          271          271
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          300 0 0
+   Faces: 
+     0 0   898
+     0 0   899
+     0 0   900
+     0 0     0
+   Nodes:
+              276          272          271          271
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          301 0 0
+   Faces: 
+     0 0   901
+     0 0   902
+     0 0   903
+     0 0     0
+   Nodes:
+              278          277          273          273
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          302 0 0
+   Faces: 
+     0 0   904
+     0 0   905
+     0 0   906
+     0 0     0
+   Nodes:
+              278          274          273          273
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          303 0 0
+   Faces: 
+     0 0   907
+     0 0   908
+     0 0   909
+     0 0     0
+   Nodes:
+              279          278          274          274
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          304 0 0
+   Faces: 
+     0 0   910
+     0 0   911
+     0 0   912
+     0 0     0
+   Nodes:
+              279          275          274          274
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          305 0 0
+   Faces: 
+     0 0   913
+     0 0   914
+     0 0   915
+     0 0     0
+   Nodes:
+              280          279          275          275
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          306 0 0
+   Faces: 
+     0 0   916
+     0 0   917
+     0 0   918
+     0 0     0
+   Nodes:
+              280          276          275          275
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          307 0 0
+   Faces: 
+     0 0   919
+     0 0   920
+     0 0   921
+     0 0     0
+   Nodes:
+              286          285          281          281
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          308 0 0
+   Faces: 
+     0 0   922
+     0 0   923
+     0 0   924
+     0 0     0
+   Nodes:
+              286          282          281          281
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          309 0 0
+   Faces: 
+     0 0   925
+     0 0   926
+     0 0   927
+     0 0     0
+   Nodes:
+              287          286          282          282
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          310 0 0
+   Faces: 
+     0 0   928
+     0 0   929
+     0 0   930
+     0 0     0
+   Nodes:
+              287          283          282          282
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          311 0 0
+   Faces: 
+     0 0   931
+     0 0   932
+     0 0   933
+     0 0     0
+   Nodes:
+              288          287          283          283
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          312 0 0
+   Faces: 
+     0 0   934
+     0 0   935
+     0 0   936
+     0 0     0
+   Nodes:
+              288          284          283          283
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          313 0 0
+   Faces: 
+     0 0   937
+     0 0   938
+     0 0   939
+     0 0     0
+   Nodes:
+              290          289          285          285
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          314 0 0
+   Faces: 
+     0 0   940
+     0 0   941
+     0 0   942
+     0 0     0
+   Nodes:
+              290          286          285          285
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          315 0 0
+   Faces: 
+     0 0   943
+     0 0   944
+     0 0   945
+     0 0     0
+   Nodes:
+              291          290          286          286
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          316 0 0
+   Faces: 
+     0 0   946
+     0 0   947
+     0 0   948
+     0 0     0
+   Nodes:
+              291          287          286          286
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          317 0 0
+   Faces: 
+     0 0   949
+     0 0   950
+     0 0   951
+     0 0     0
+   Nodes:
+              292          291          287          287
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          318 0 0
+   Faces: 
+     0 0   952
+     0 0   953
+     0 0   954
+     0 0     0
+   Nodes:
+              292          288          287          287
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          319 0 0
+   Faces: 
+     0 0   955
+     0 0   956
+     0 0   957
+     0 0     0
+   Nodes:
+              294          293          289          289
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          320 0 0
+   Faces: 
+     0 0   958
+     0 0   959
+     0 0   960
+     0 0     0
+   Nodes:
+              294          290          289          289
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          321 0 0
+   Faces: 
+     0 0   961
+     0 0   962
+     0 0   963
+     0 0     0
+   Nodes:
+              295          294          290          290
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          322 0 0
+   Faces: 
+     0 0   964
+     0 0   965
+     0 0   966
+     0 0     0
+   Nodes:
+              295          291          290          290
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          323 0 0
+   Faces: 
+     0 0   967
+     0 0   968
+     0 0   969
+     0 0     0
+   Nodes:
+              296          295          291          291
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01
+ Element:          324 0 0
+   Faces: 
+     0 0   970
+     0 0   971
+     0 0   972
+     0 0     0
+   Nodes:
+              296          292          291          291
+   Scale factors:
+      0.10000E+01  0.10000E+01  0.10000E+01  0.10000E+01

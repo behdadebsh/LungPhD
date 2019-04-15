@@ -22,7 +22,7 @@ from PIL import Image
 # import matplotlib
 # matplotlib.use('wx')          # depending on your working backend you should use
 # matplotlib.use('Qt4Agg')      # depending on your working backend you should use
-# from mayavi import mlab
+from mayavi import mlab
 from skimage import measure, morphology, segmentation
 
 
@@ -110,25 +110,22 @@ def downsample(image, scan, new_spacing=[1, 1, 1]):
 def main():
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
-    # data_dir = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
-    # data_dir = '/hpc/bsha219/lung/Data/P2BRP257-H12076/FRC/Raw/DICOMS'
     patient_scans = load_scan('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Raw/DICOMS')
     patient_images = get_pixels_hu(patient_scans)
-# imgs, spacing = downsample(patient_images, patient_scans, [1, 1, 1])
-#     segmented = []
+    segmented = []
 
     for i in range(len(patient_images)):
         lungs, left_lung, right_lung = lung_segment(patient_images[i])
-    # segmented.append(lungs)
-    # segmented = np.asarray(segmented)
+        segmented.append(lungs)
+        segmented = np.asarray(segmented)
         lungs = np.uint8(lungs)
     # to save them as a stack of masks in a directory
-        binary_im = Image.fromarray(lungs)
-        binary_im.save('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.jpg' % i, quality=100)
+    #     binary_im = Image.fromarray(lungs)
+        # binary_im.save('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/Lung/LungMask%.4d.jpg' % i, quality=100)
     # scipy.misc.imsave('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.png' % i, lungs)
 
-    # src1 = mlab.pipeline.scalar_field(segmented)
-    # mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
+    src1 = mlab.pipeline.scalar_field(segmented)
+    mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
     # mlab.pipeline.image_plane_widget(src1,plane_orientation='x_axes',slice_index=10)
 
 
