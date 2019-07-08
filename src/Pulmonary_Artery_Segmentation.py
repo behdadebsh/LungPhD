@@ -59,7 +59,11 @@ def main():
         seg, phi, its = lvlset(sharpened, seed, max_its=1000, display=True, alpha=0.4)
         segment = seg * 1.0
         # scipy.misc.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/LungMask%.4d.jpg' % k, segment) # binary files
-        matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(k) + '.png', segment)  # RGB files
+        # matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(k) + '.png', segment)  # RGB files
+        segment = np.uint8(segment)
+        # to save them as a stack of masks in a directory
+        binary_im = Image.fromarray(segment)
+        binary_im.save('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.jpg' % k, quality=100)
 
 
 if __name__ == '__main__':
