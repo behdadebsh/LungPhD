@@ -17,11 +17,6 @@
 # Edges" By Chan Vese. This is a nice way to segment images whose
 # foregrounds and backgrounds are statistically different and homogeneous.
 #
-# Example:
-# img = imread('tire.tif');
-# m = zeros(size(img));
-# m(33:33+117, 44:44+128) = 1;
-# seg = region_seg(img, m, 500);
 #
 # Coded by: Shawn Lankton (www.shawnlankton.com)
 # ------------------------------------------------------------------------
@@ -36,7 +31,7 @@ import matplotlib.pyplot as plt
 eps = np.finfo(float).eps
 
 
-def lvlset(I, init_mask, max_its=200, alpha=0.2, thresh=0.7, color='r', display=False):
+def lvlset(I, init_mask, max_its=200, alpha=0.2, thresh=0.8, color='r', display=False):
     I = I.astype(np.float)
 
     # Create a signed distance map (SDF) from mask
@@ -106,8 +101,8 @@ def lvlset(I, init_mask, max_its=200, alpha=0.2, thresh=0.7, color='r', display=
     # Final output
     if display:
         show_curve_and_phi(fig, I, phi, color)
-        # plt.savefig('levelset_end.png', bbox_inches='tight')
-
+        # plt.savefig('mask.png', bbox_inches='tight')
+        plt.close()
     # Make mask from SDF
     seg = phi <= 0  # Get mask from levelset
 
@@ -259,11 +254,3 @@ def convergence(p_mask, n_mask, thresh, c):
     else:
         c = 0
     return c
-
-
-if __name__ == "__main__":
-    img = nd.imread('brain.png', flatten=True)
-    mask = np.zeros(img.shape)
-    mask[20:100, 20:100] = 1
-
-    lvlset(img, mask, max_its=1000, display=True, alpha=1.0)

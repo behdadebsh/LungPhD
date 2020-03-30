@@ -1,0 +1,552 @@
+ CMISS Version 2.1  ipmap File Version 1
+ Heading:
+ 
+ Define node position mapping [N]? y
+ The number of nodes with special mappings is [    1]: 5
+ 
+ Node number [    1]: 5
+ For the Xj(1) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,1,2
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,1,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(2) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,2,2
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,2,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(3) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,3,2
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 5,1,3,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+
+ Node number [    1]: 7
+ For the Xj(1) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,1,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(2) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,2,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(3) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 7,1,3,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+
+ Node number [    1]: 9
+ For the Xj(1) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,1,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(2) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,2,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(3) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 9,1,3,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+
+ Node number [    1]: 6
+ For the Xj(1) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,2
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 3:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,1,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 4:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 5:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,1,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 6:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,1,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,1,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(2) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,2
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 3:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,2,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 4:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 5:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,2,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 6:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,2,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,2,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For the Xj(3) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,2
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 3:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,3,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 4:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 5:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,3,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 6:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,2,3,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 6,1,3,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ 
+ Node number [    1]: 8
+ For the Xj(1) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,4
+ Enter the mapping coefficient [1]: 1
+ For version number 3:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,4
+ Enter the mapping coefficient [1]: 1
+ For version number 4:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,4
+ Enter the mapping coefficient [1]: 1
+ For version number 5:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,4
+ Enter the mapping coefficient [1]: 1
+ For version number 6:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,1,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,1,4
+ Enter the mapping coefficient [1]: 1
+ For the Xj(2) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,4
+ Enter the mapping coefficient [1]: 1
+ For version number 3:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,4
+ Enter the mapping coefficient [1]: 1
+ For version number 4:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,4
+ Enter the mapping coefficient [1]: 1
+ For version number 5:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,4
+ Enter the mapping coefficient [1]: 1
+ For version number 6:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,2,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,2,4
+ Enter the mapping coefficient [1]: 1
+ For the Xj(3) coordinate:
+ For version number 1:
+ Is the nodal position mapped out [N]? N
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? N
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? N
+ For version number 2:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? N
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,4
+ Enter the mapping coefficient [1]: 1
+ For version number 3:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,4
+ Enter the mapping coefficient [1]: 1
+ For version number 4:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,3
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,4
+ Enter the mapping coefficient [1]: 1
+ For version number 5:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,3
+ Enter the mapping coefficient [1]: -1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,4
+ Enter the mapping coefficient [1]: 1
+ For version number 6:
+ Is the nodal position mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,1
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 1 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt direction 2 is mapped out [N]? y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,2,3,2
+ Enter the mapping coefficient [1]: 1
+ Is the derivative wrt directions 1 & 2 is mapped out [N]? Y
+ Enter node, version, direction, derivative numbers to map to [1,1,1,1]: 8,1,3,4
+ Enter the mapping coefficient [1]: 1
