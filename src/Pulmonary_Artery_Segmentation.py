@@ -52,7 +52,7 @@ def main():
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
     # data_dir = '/hpc/bsha219/lung/Data/ST12/Raw/DICOMS'
-    patient_scans = load_scan('/hpc/bsha219/lung/Data/ST12/Raw/DICOMS')
+    patient_scans = load_scan('C:/Users/asus/Desktop/ST12/Raw/DICOMS')
     patient_images = get_pixels_hu(patient_scans)
     global artery_mask
     artery_mask = []
@@ -60,6 +60,14 @@ def main():
         global coords
         coords = []
         img = patient_images[k]
+        root = tk.Tk()
+        im = Image.fromarray(img)
+        photo = ImageTk.PhotoImage(im)
+        canvas = tk.Canvas(root, width=512, height=512)
+        canvas.pack()
+        canvas.create_image(256, 256, image=photo)
+        canvas.bind("<Button-1>", onclick)
+        root.mainloop()
         for i in range(img.shape[0]):
             for j in range(img.shape[0]):
                 if img[i][j] > 0:
@@ -69,15 +77,6 @@ def main():
         filter_blurred_f2 = filters.median_filter(filter_blurred_f, 3)
         alpha = 100
         sharpened = blurred_f + alpha * (blurred_f - filter_blurred_f2)
-
-        root = tk.Tk()
-        im = Image.fromarray(sharpened)
-        photo = ImageTk.PhotoImage(im)
-        canvas = tk.Canvas(root, width=512, height=512)
-        canvas.pack()
-        canvas.create_image(256, 256, image=photo)
-        canvas.bind("<Button-1>", onclick)
-        root.mainloop()
 
         # fig = plt.figure()
         # plt.gray()
@@ -91,7 +90,7 @@ def main():
             seed[int(coords[jj][1]), int(coords[jj][0])] = 1
         seg, phi, its = lvlset(sharpened, seed, max_its=1000, display=True, alpha=0.2)
         segment = seg * 1.0
-        matplotlib.image.imsave('/hpc/bsha219/Python/Behdad/Out_arterial_mask/' + str(i) + '.png', segment)
+        matplotlib.image.imsave('C:/Users/asus/Desktop/Out_artery_mask/' + str(k) + '.png', segment)
         # fig.canvas.mpl_disconnect(cid)
         # plt.close()
         # artery_mask.append(segment)

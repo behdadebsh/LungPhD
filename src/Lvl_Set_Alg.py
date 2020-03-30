@@ -36,7 +36,7 @@ import matplotlib.pyplot as plt
 eps = np.finfo(float).eps
 
 
-def lvlset(I, init_mask, max_its=200, alpha=0.2, thresh=0, color='r', display=False):
+def lvlset(I, init_mask, max_its=200, alpha=0.2, thresh=0.7, color='r', display=False):
     I = I.astype(np.float)
 
     # Create a signed distance map (SDF) from mask
