@@ -24,7 +24,7 @@ def writeExDataFile(filename, coords, mean_radius_field=None):
                 f.write('   %s\n' % mean_radius_field[i])
 
 
-def writeExNodeFile(filename, coords):
+def writeExNodeFile(filename, coords, fields, list_of_fields):
     """
     Write out an ex Node file with the given coords.
     :param filename: Filename to write to.
@@ -33,7 +33,7 @@ def writeExNodeFile(filename, coords):
     """
     with open(filename, 'w') as f:
         f.write(' Group name : MAC\n')
-        f.write(' #Fields=1\n')
+        f.write(' #Fields=%1\n')
         f.write(' 1) coordinates, coordinate, rectangular cartesian, #Components=3\n')
         f.write('   x.  Value index= 1, #Derivatives= 0\n')
         f.write('   y.  Value index= 2, #Derivatives= 0\n')

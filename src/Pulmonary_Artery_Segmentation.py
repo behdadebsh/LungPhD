@@ -27,11 +27,11 @@ def main():
     if len(sys.argv) > 1:
         data_dir = sys.argv[1]
     # data_dir = '/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Raw/DICOMS'
-    patient_scans = load_scan('/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Raw/DICOMS')
+    patient_scans = load_scan('/hpc/bsha219/lung/Data/CTEPH/CTEPH1/FRC/Raw/DICOMS')
     patient_images = get_pixels_hu(patient_scans)
     global artery_mask
     artery_mask = []
-    for k in range(115, 215):
+    for k in range(1, 115):
         global coords
         coords = []
         img = patient_images[k]
@@ -63,7 +63,7 @@ def main():
         segment = np.uint8(segment)
         # to save them as a stack of masks in a directory
         binary_im = Image.fromarray(segment)
-        binary_im.save('/hpc/bsha219/Python/Behdad/Lung_masks/LungMask%.4d.jpg' % k, quality=100)
+        binary_im.save('/hpc/bsha219/lung/Data/CTEPH/CTEPH1/FRC/Vessel/Mask/MPAMask%.4d.jpg' % k, quality=100)
 
 
 if __name__ == '__main__':
