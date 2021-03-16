@@ -13,8 +13,10 @@ def readnodefile(path):
 
 
 def main():
+
     a = readnodefile('/hpc/bsha219/Packages/functional-models/wave_transmission_Ebrahimi2019/Remod_grade10_FlowBC/terminal_flow_80')
     # a = readnodefile('E:\\wave_transmission\\Remod_grade10\\Remod_grade10\\terminal_flow_64')  # FOR WINDOWS
+
     direction = 'y'  # you can only choose the axis
     maximum = max(a, key=lambda x:x[direction])
     minimum = min(a, key=lambda x:x[direction])

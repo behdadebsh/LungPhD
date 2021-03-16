@@ -1,4 +1,3 @@
-
 =======================
 Lung & MPA Segmentation
 =======================
@@ -20,6 +19,3 @@ Semi-automatic Main Pulmonary Artery segmentation:
 |MPA|
 
 .. |MPA| image:: /docs/_static/MPA-gif.gif
-
-
-
