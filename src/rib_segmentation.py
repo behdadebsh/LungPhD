@@ -75,71 +75,32 @@ def main():
     # bones = np.array([len(patient_images), 512, 512])
     bones = []
     segmented = []
-    # for i in range(len(patient_images)): #this
-    #     lungs, left_lung, right_lung = lung_segment(patient_images[i]) #this
-    #     segmented.append(lungs) #this
-    #     lungs = np.uint8(lungs) #this
+    for i in range(len(patient_images)): #this
+        lungs, left_lung, right_lung = lung_segment(patient_images[i]) #this
+        segmented.append(lungs) #this
+        lungs = np.uint8(lungs) #this
         # to save LungMask as a stack of masks in a directory
-        # binary_im = Image.fromarray(lungs) #this
+        binary_im = Image.fromarray(lungs) #this
         # binary_im.save('/hpc/bsha219/Hari/RA_work/BRPILD001-H687/FRC/Lung/LungMask%.4d.jpg' % i, quality=100)
         # filter_blurred = ndimage.gaussian_filter(patient_images[i], sigma=3)
-        # marker_internal = generate_markers(patient_images[i], 100)  # you can play with threshold value to maybe get better results #this
+        marker_internal = generate_markers(patient_images[i], 100)  # you can play with threshold value to maybe get better results #this
         # marker_internal = morphology.binary_closing(marker_internal)#, selem=morphology.disk(1))
         # marker_internal = morphology.dilation(marker_internal)
         # marker_internal = marker_internal * 1
         # marker_internal = ndimage.binary_opening(marker_internal)
-        # marker_internal = ndimage.binary_closing(marker_internal, structure=square(10)) #this
+        marker_internal = ndimage.binary_closing(marker_internal, structure=square(3)) #this
         # marker_internal = ndimage.binary_opening(marker_internal, structure=square(3))
         # marker_internal = ndimage.binary_opening(marker_internal)
         # marker_internal = ndimage.binary_closing(marker_internal)
-        # marker_internal = marker_internal * 1 #this
+        marker_internal = marker_internal * 1 #this
         # print(marker_internal[30])
         # marker_internal = cc_thresholding(marker_internal)
         # marker_internal = morphology.opening(marker_internal)
-        # bones.append(marker_internal) #this
+        bones.append(marker_internal) #this
     # to save them as a stack of masks in a directory
-    #     plt.imshow(marker_internal)  # in case you want to see a slice
-    #     plt.show()
-    #     plt.imsave('/hpc/bsha219/Hari/RA_work/BRPILD001-H687/FRC/Ribcage_mask/BoneMask%.4d.png' % i, marker_internal)
-    # bones = np.asarray(bones)
-    # bones = np.flip(bones, axis=1)
-    marker_internal = generate_markers(patient_images[100], 100)
-    marker_internal = marker_internal * 1
-    for i in range(len(patient_images)):
-        ehem = frangi(patient_images[i], beta1=2, beta2=25, black_ridges=True)
-    # ehem = frangi(patient_images[100])
-    # ehem = hessian(patient_images[100])
-    #     plt.imshow(ehem)
-        plt.imsave('/hpc/bsha219/Hari/RA_work/BRPILD001-H687/FRC/Art_work/Frangi%.4d.png' % i, ehem)
-    # plt.show()
-    segmented = np.asarray(segmented)
-    segmented = segmented * 1
-    segmented = np.flip(segmented, axis=1)
-    # print(type(bones))
-    # print(bones.shape)
-    # bones = ndimage.binary_opening(bones, structure=cube(3))
-    # bones = bones * 1
-    bones = ndimage.binary_closing(bones, structure=cube(10, dtype=np.uint8))
-    bones = bones * 1
-    # bones = ndimage.binary_opening(bones, structure=cube(3))
-    # bones = bones * 1
-    # bones = cc_thresholding(bones)
-    bones = bones.T
-    segmented = segmented.T
-    # bones = morphology.binary_closing(bones, selem=cube(3, 3))
-    # print(bones.shape)
-    # print(type(bones))
-    # mlab.mesh()
-    # mlab.show()
-    # src1 = mlab.pipeline.scalar_field(bones)
-    # src2 = mlab.pipeline.scalar_field(segmented)
-    # blur = mlab.pipeline.user_defined(src, filter='ImageGaussianSmooth')
-    # voi = mlab.pipeline.extract_grid(blur)
-    # mlab.pipeline.iso_surface(src1, colormap='Spectral')
-    # mlab.pipeline.iso_surface(src2, colormap='Blues')
-    # mlab.pipeline.volume(src1, vmin=0, vmax=0.8)
-    # mlab.pipeline.image_plane_widget(src1, plane_orientation='x_axes',slice_index=10)
-    # mlab.show()
+        plt.imshow(marker_internal)  # in case you want to see a slice
+        plt.show()
+        plt.imsave('/hpc/bsha219/Hari/RA_work/BRPILD001-H687/FRC/Ribcage_mask/BoneMask%.4d.png' % i, marker_internal)
 
 
 if __name__ == '__main__':
