@@ -42,7 +42,7 @@ def getCoordinatesForXi2(el_info, el_ids, xi_2_index):
 context = Context("Centerline")
 region = context.getDefaultRegion()
 # directory = '/hpc/bsha219/lung/Data/Human_PE_Study_HRC/ST12/TLC/Vessel/SurfaceFEMesh/'
-directory = '/hpc/bsha219/lung/Data/CTEPH/NewCase/FRC/Vessel/SurfaceFEMesh/'
+directory = '/hpc/bsha219/lung/Data/CTEPH/CTEPH2/FRC/Vessel/SurfaceFEMesh/'
 status = region.readFile(directory + "MPA_fitted.exnode")
 status = region.readFile(directory + "MPA_fitted.exelem")
 fieldmodule = region.getFieldmodule()
