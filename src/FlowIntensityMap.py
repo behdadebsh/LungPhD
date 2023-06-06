@@ -2,6 +2,8 @@ import os
 import cv2
 import pydicom
 import numpy as np
+from global_nodes import global_nodes
+from data_node_lobes import data_node_lobes
 
 def createDICOMStackAndMask(Lung_Path, Mask_Path, option):
     """
@@ -83,7 +85,7 @@ def read_coordinates(filename):
             coordinates.append((x, y, z))
     return np.array(coordinates)
 
-def writeExNodeFile(path, filename, coords):
+def writeExNodeFileWithField(path, filename, coords, field):
     """
     Write out an ex Node file with the given coords.
     :param path: the path you want the file to be written at
@@ -91,18 +93,26 @@ def writeExNodeFile(path, filename, coords):
     :param coords: List of coordinate lists.
     :return: None
     """
-    with open(os.path.join(path, filename), 'w') as f:
-        f.write(' Group name : MAC\n')
-        f.write(' #Fields=%1\n')
+    with open(os.path.join(path, filename + '.exnode'), 'w') as f:
+        f.write(' Group name : voxel_intensity\n')
+        f.write(' #Fields=2\n')
         f.write(' 1) coordinates, coordinate, rectangular cartesian, #Components=3\n')
         f.write('   x.  Value index= 1, #Derivatives= 0\n')
         f.write('   y.  Value index= 2, #Derivatives= 0\n')
         f.write('   z.  Value index= 3, #Derivatives= 0\n')
+        f.write(' 2) avg_intensity, field, rectangular cartesian, #Components=1\n')
+        f.write('  1.  Value index= 4, #Derivatives=0\n')
+        # for j in range(len(intensity)):
+        #     f.write(f' Node:      {j}\n')
+        #     f.write(f'   {coords[j, 2]}  {coords[j, 3]}  {coords[j, 4]}   {intensity[j]}\n')
+        # export_file.close()
         for i in range(len(coords)):
             f.write(' Node:         %.4d\n' % (i + 1001))
             f.write('    %s\n' % (coords[i][0]))
             f.write('    %s\n' % (coords[i][1]))
             f.write('    %s\n' % (coords[i][2]))
+            f.write('    %s\n' % (field[i]))
+        f.close()
 
 def voxel_avg_intensity(x_y_res,z_res,spacing,coords,Lung3D):
 
@@ -166,98 +176,175 @@ def voxel_avg_intensity(x_y_res,z_res,spacing,coords,Lung3D):
                                       int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
                                       int(coords[i, 2] - Voxel_z):int(coords[i, 2] + Voxel_z)]) / nnz
 
-    # # Try increasing voxel size if all intensities within voxel are zero (usually at edges)
-    # multiplier = 0
-    # while np.min(intensity) == 0 and multiplier < 10:
-    #     multiplier += 1
-    #     Voxel_xy = np.floor(spacing / x_y_res)
-    #     Voxel_z = np.floor(spacing / z_res) * multiplier
-    #     for i in range(len(coords)):
-    #         if intensity[i] == 0:
-    #             if coords[i, 2] < Voxel_z:
-    #                 if coords[i, 2] <= 0:
-    #                     nz = 0
-    #                 elif coords[i, 2] > 0:
-    #                     nz = coords[i, 2]
-    #                 nnz = np.count_nonzero(Lung3D_double[(coords[i, 1] - Voxel_xy):(coords[i, 1] + Voxel_xy),
-    #                                        (coords[i, 0] - Voxel_xy):(coords[i, 0] + Voxel_xy),
-    #                                        : (Voxel_z + nz)])
-    #                 if nnz == 0:
-    #                     intensity[i] = 0
-    #                 else:
-    #                     intensity[i] = np.sum(Lung3D_double[(coords[i, 1] - Voxel_xy):(coords[i, 1] + Voxel_xy),
-    #                                           (coords[i, 0] - Voxel_xy):(coords[i, 0] + Voxel_xy),
-    #                                           : (Voxel_z + nz)]) / nnz
-    #             elif coords[i, 2] > (len(Lung3D) - Voxel_z):
-    #                 if coords[i, 2] >= len(Lung3D):
-    #                     nz = 0
-    #                 elif coords[i, 2] < len(Lung3D):
-    #                     nz = len(Lung3D) - coords[i, 2]
-    #                 nnz = np.count_nonzero(Lung3D_double[(coords[i, 1] - Voxel_xy):(coords[i, 1] + Voxel_xy),
-    #                                        (coords[i, 0] - Voxel_xy):(coords[i, 0] + Voxel_xy),
-    #                                        (len(Lung3D) - (Voxel_z + nz)):])
-    #                 if nnz == 0:
-    #                     intensity[i] = 0
-    #                 else:
-    #                     intensity[i] = np.sum(Lung3D_double[(coords[i, 1] - Voxel_xy):(coords[i, 1] + Voxel_xy),
-    #                                           (coords[i, 0] - Voxel_xy):(coords[i, 0] + Voxel_xy),
-    #                                           (len(Lung3D) - (Voxel_z + nz)):]) / nnz
-    #             else:
-    #                 nnz = np.count_nonzero(Lung3D_double[(coords[i, 1] - Voxel_xy):(coords[i, 1] + Voxel_xy),
-    #                                        (coords[i, 0] - Voxel_xy):(coords[i, 0] + Voxel_xy),
-    #                                        (coords[i, 2] - Voxel_z):(coords[i, 2] + Voxel_z)])
-    #                 if nnz == 0:
-    #                     intensity[i] = 0
-    #                 else:
-    #                     intensity[i] = np.sum(Lung3D_double[(coords[i, 1] - Voxel_xy):(coords[i, 1] + Voxel_xy),
-    #                                           (coords[i, 0] - Voxel_xy):(coords[i, 0] + Voxel_xy),
-    #                                           (coords[i, 2] - Voxel_z):(coords[i, 2] + Voxel_z)]) / nnz
-    #
-    # # Set 0 values to closest intensity (if increasing voxel size doesn't work)
-    # counter = 0
-    # for i in range(len(intensity)):
-    #     if intensity[i] == 0:
-    #         counter += 1
-    #         intensity_sub1 = 0
-    #         intensity_sub2 = 0
-    #         k = i
-    #         l = i
-    #         while intensity_sub1 == 0 and intensity_sub2 == 0:
-    #             k += 1
-    #             l -= 1
-    #             if k < len(intensity):
-    #                 intensity_sub1 = intensity[k]
-    #             elif l > 0:
-    #                 intensity_sub2 = intensity[l]
-    #         if intensity_sub1 != 0:
-    #             intensity[i] = intensity_sub1
-    #         else:
-    #             intensity[i] = intensity_sub2
+    # Try increasing voxel size if all intensities within voxel are zero (usually at edges)
+    multiplier = 0
+    while np.min(intensity) == 0 and multiplier < 10:
+        multiplier += 1
+        Voxel_xy = np.floor(spacing / x_y_res)
+        Voxel_z = np.floor(spacing / z_res) * multiplier
+        for i in range(len(coords)):
+            if intensity[i] == 0:
+                if int(coords[i, 2]) < Voxel_z:
+                    if int(coords[i, 2]) <= 0:
+                        nz = 0
+                    elif int(coords[i, 2]) > 0:
+                        nz = int(coords[i, 2])
+                    nnz = np.count_nonzero(Lung3D_double[int(coords[i, 1] - Voxel_xy):int(coords[i, 1] + Voxel_xy),
+                                           int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
+                                           : (Voxel_z + nz)])
+                    if nnz == 0:
+                        intensity[i] = 0
+                    else:
+                        intensity[i] = np.sum(Lung3D_double[int(coords[i, 1] - Voxel_xy):int(coords[i, 1] + Voxel_xy),
+                                              int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
+                                              : (Voxel_z + nz)]) / nnz
+                elif int(coords[i, 2]) > (len(Lung3D) - Voxel_z):
+                    if int(coords[i, 2]) >= len(Lung3D):
+                        nz = 0
+                    elif int(coords[i, 2]) < len(Lung3D):
+                        nz = len(Lung3D) - coords[i, 2]
+                    nnz = np.count_nonzero(Lung3D_double[int(coords[i, 1] - Voxel_xy):int(coords[i, 1] + Voxel_xy),
+                                           int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
+                                           (len(Lung3D) - (Voxel_z + nz)):])
+                    if nnz == 0:
+                        intensity[i] = 0
+                    else:
+                        intensity[i] = np.sum(Lung3D_double[int(coords[i, 1] - Voxel_xy):int(coords[i, 1] + Voxel_xy),
+                                              int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
+                                              (len(Lung3D) - (Voxel_z + nz)):]) / nnz
+                else:
+                    nnz = np.count_nonzero(Lung3D_double[int(coords[i, 1] - Voxel_xy):int(coords[i, 1] + Voxel_xy),
+                                           int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
+                                           int(coords[i, 2] - Voxel_z):int(coords[i, 2] + Voxel_z)])
+                    if nnz == 0:
+                        intensity[i] = 0
+                    else:
+                        intensity[i] = np.sum(Lung3D_double[int(coords[i, 1] - Voxel_xy):int(coords[i, 1] + Voxel_xy),
+                                              int(coords[i, 0] - Voxel_xy):int(coords[i, 0] + Voxel_xy),
+                                              int(coords[i, 2] - Voxel_z):int(coords[i, 2] + Voxel_z)]) / nnz
+
+    # Set 0 values to closest intensity (if increasing voxel size doesn't work)
+    counter = 0
+    for i in range(len(intensity)):
+        if intensity[i] == 0:
+            counter += 1
+            intensity_sub1 = 0
+            intensity_sub2 = 0
+            k = i
+            l = i
+            while intensity_sub1 == 0 and intensity_sub2 == 0:
+                k += 1
+                l -= 1
+                if k < len(intensity):
+                    intensity_sub1 = intensity[k]
+                elif l > 0:
+                    intensity_sub2 = intensity[l]
+            if intensity_sub1 != 0:
+                intensity[i] = intensity_sub1
+            else:
+                intensity[i] = intensity_sub2
 
     intensity = intensity - 1024  # HU_offset
     return intensity
 
-    # Output file
-    # export_file = open(f'/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/{subject}_{lobe}_avg0g.exdata', 'w')
-    # export_file.write(' Group name: colourful_spots\n')
-    # export_file.write('#Fields=2\n')
-    # export_file.write(' 1) coordinates, coordinate, rectangular cartesian, #Components=3\n')
-    # export_file.write('  x.  Value index= 1, #Derivatives=0\n')
-    # export_file.write('  y.  Value index= 2, #Derivatives=0\n')
-    # export_file.write('  z.  Value index= 3, #Derivatives=0\n')
-    # export_file.write(' 2) UnknownField, field, rectangular cartesian, #Components=1\n')
-    # export_file.write('  1.  Value index= 4, #Derivatives=0\n')
-    # for j in range(len(intensity)):
-    #     export_file.write(f' Node:      {j}\n')
-    #     export_file.write(f'   {A.data[j, 2]}  {A.data[j, 3]}  {A.data[j, 4]}   {intensity[j]}\n')
-    # export_file.close()
+def get_num_elements(artery_file):
+    with open(artery_file) as f_in:
+        lines = (line.rstrip() for line in f_in)
+        file_content = list(line for line in lines if line)
+    for file_line in (file_content):
+        if (file_line.split()[0]) == 'Element:':
+            num_elems = int(file_line.split()[1])
+        # else:
+        #     print("Artery file corrupt.")
+        #     exit(0)
+    return num_elems
+
+def intensity_mapping_avg(subject_path, subject_name, num_elems, intensity_rll, intensity_rml, intensity_rul, intensity_lll, intensity_lul, blood, air):
+    # vessel_path = os.path.join(subject_path, 'Vessel')
+    # artery_file = vessel_path + '/' + subject_name + '_Artery_Full.exnode'
+    # num_elems = get_num_elements(artery_file)
+    elem_global_nodes, elem_gen, elem_children = global_nodes(vessel_path, artery_file, num_elems)
+    Lobe_Path = os.path.join(subject_path, 'Lobe')
+    Intensity_Path = os.path.join(subject_path, 'Intensity_mapping')
+    isExist = os.path.exists(Intensity_Path)
+    if not isExist:
+        # Create a new directory because it does not exist
+        os.makedirs(Intensity_Path)
+    # Data_Points_LLL = len(intensity_lll)
+    # Data_Points_LUL = len(intensity_lul)
+    # Data_Points_RLL = len(intensity_rll)
+    # Data_Points_RML = len(intensity_rml)
+    # Data_Points_RUL = len(intensity_rul)
+    nodal_intensities = data_node_lobes(Lobe_Path, intensity_lll, intensity_lul, intensity_rll,
+                                        intensity_rml, intensity_rul, blood, air)
+
+    # Calculate the sum of intensities
+    Intensity_sum = np.sum(nodal_intensities[:, 1])
+
+    # Calculate nodal intensity fractions
+    nodal_intensity_fractions = nodal_intensities[:, 1] / Intensity_sum
+
+    start = np.max(elem_gen)
+    l = len(elem_gen)
+    elem_intensities = np.zeros((l, 1))  # Adjust the size of elem_intensities
+
+    for n in range(len(nodal_intensities)):
+        elem_intensities[int(nodal_intensities[n, 0])-1] = nodal_intensity_fractions[n]
+
+    for k in range(start, 0, -1):
+        for m in range(l):
+            generation = elem_gen[m]
+            if generation == k:
+                if elem_children[m, 0] == 0:
+                    for n in range(len(nodal_intensities)):
+                        if nodal_intensities[n, 0] == elem_global_nodes[m, 1]:
+                            elem_intensities[m] = nodal_intensity_fractions[n]
+                elif elem_children[m, 1] == 0:
+                    elem_intensities[m] = elem_intensities[elem_children[m, 0]]
+                else:
+                    elem_intensities[m] = elem_intensities[elem_children[m, 0] - 1] + elem_intensities[elem_children[m, 1] - 1]
+
+    # Export elem_intensities to a file
+    export_file_1 = open(
+        '/hpc/bsha219/lung/Data/CTEPH/' + subject_name + '/FRC/Intensity_mapping/' + subject_name + '_elem_intensity_map_python.exelem',
+        'w')
+
+    export_file_1.write(' Group name: flow_diff1\n')
+    export_file_1.write(
+        ' Shape.  Dimension=1\n #Scale factor sets=0\n #Nodes=0\n #Fields=1\n 1) flow_diff_fraction, field, rectangular cartesian, #Components=1\n   flow_diff_fraction.  l.Lagrange, no modify, grid based.\n   #xi1=1\n')
+
+    for j in range(len(elem_intensities)):
+        export_file_1.write(' Element:     ' + str(j+1) + ' ' + str(0) + ' ' + str(0) + '\n   Values:\n        ' + str(
+            elem_intensities[j]).strip('[]') + '    ' + str(elem_intensities[j]).strip('[]') + '\n')
+
+    export_file_1.close()
 
 
 subject_name = 'Alfred1'
+subject_path = '/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC'
 Lung_Path = os.path.join('/hpc/bsha219/lung/Data/CTEPH/', subject_name, 'Pre/scans/5-DE_CTPA_Fines__F_0.7/resources/DICOM')
 Mask_Path = os.path.join('/hpc/bsha219/lung/Data/CTEPH/', subject_name, 'Pre/Lung/PTKLungMask')
 lungs, images, masks = createDICOMStackAndMask(Lung_Path, Mask_Path, 0)
-coords = read_coordinates('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/RLL_DataGrid.exdata')
-intensity = voxel_avg_intensity(0.646484, 0.7, 5.2, coords, lungs)
+coords_RLL = read_coordinates('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/RLL_DataGrid.exdata')
+coords_RML = read_coordinates('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/RML_DataGrid.exdata')
+coords_RUL = read_coordinates('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/RUL_DataGrid.exdata')
+coords_LLL = read_coordinates('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/LLL_DataGrid.exdata')
+coords_LUL = read_coordinates('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe/LUL_DataGrid.exdata')
+intensity_RLL = voxel_avg_intensity(0.646484, 0.7, 5.2, coords_RLL, lungs)
+intensity_RML = voxel_avg_intensity(0.646484, 0.7, 5.2, coords_RML, lungs)
+intensity_RUL = voxel_avg_intensity(0.646484, 0.7, 5.2, coords_RUL, lungs)
+intensity_LLL = voxel_avg_intensity(0.646484, 0.7, 5.2, coords_LLL, lungs)
+intensity_LUL = voxel_avg_intensity(0.646484, 0.7, 5.2, coords_LUL, lungs)
+writeExNodeFileWithField('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe', 'test_RLL', coords_RLL, intensity_RLL)
+writeExNodeFileWithField('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe', 'test_RUL', coords_RUL, intensity_RUL)
+writeExNodeFileWithField('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe', 'test_RML', coords_RML, intensity_RML)
+writeExNodeFileWithField('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe', 'test_LLL', coords_LLL, intensity_LLL)
+writeExNodeFileWithField('/hpc/bsha219/lung/Data/CTEPH/CTEPH10/FRC/Lobe', 'test_LUL', coords_LUL, intensity_LUL)
+vessel_path = os.path.join(subject_path, 'Vessel')
+artery_file = vessel_path + '/' + 'CTEPH10_Artery_Full.exelem'
+num_elems = get_num_elements(artery_file)
+intensity_mapping_avg(subject_path, 'CTEPH10', num_elems, intensity_RLL, intensity_RML, intensity_RUL, intensity_LLL, intensity_LUL, 417, -960)
+
+
 
 
