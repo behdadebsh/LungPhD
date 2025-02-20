@@ -17,6 +17,7 @@ old_node = []
 index = {}
 new_node = []
 node = {}
+node_list = []
 
 line = 0
 while line < total_lines:
@@ -24,13 +25,14 @@ while line < total_lines:
     if current_line.startswith("Node:"):
         total_nodes += 1
         words = current_line.split()
+        node_list.append(words[1])
         if len(words) < 2:
             print(f"Warning: Line {line + 1} does not contain enough data: {current_line}")
             line += 1
             continue
         node_id = words[1]
         old_node.append(node_id)
-        index[node_id] = total_nodes
+        index[total_nodes] = node_id
         new_node.append(total_nodes)
 
         node[total_nodes] = []
@@ -73,7 +75,7 @@ try:
             if n not in node:
                 print(f"Warning: Node {n} not found in the data.")
                 continue
-            ipnode.write(f" Node number [    {n}]:     {n}\n")
+            ipnode.write(f" Node number [    {index[n]}]:     {index[n]}\n")
             ipnode.write(" The number of versions for nj=1 is [1]:  1\n")
             ipnode.write(f" The Xj(1) coordinate is [ 0.00000E+00]:  {node[n][0] if len(node[n]) > 0 else ''}\n")
             ipnode.write(" The number of versions for nj=2 is [1]:  1\n")
