@@ -619,9 +619,9 @@ def get_ancestor_path(node_id, parent_map):
     return path
 
 
-def find_lca_for_lobes(tree_dict, terminal_to_lobe):
+def find_lcp_for_lobes(tree_dict, terminal_to_lobe):
     """
-    For each lung lobe, find the lowest common ancestor of its terminal nodes.
+    For each lung lobe, find the lowest common parent of its terminal nodes.
     """
     parent_map = build_parent_map(tree_dict)
 
@@ -654,7 +654,7 @@ def find_lca_for_lobes(tree_dict, terminal_to_lobe):
     return lobe_lca
 
 
-def find_feeding_elements(tree_dict, lobe_lca_mapping):
+def find_feeding_elements(tree_dict, lobe_lcp_mapping):
     """
     For each lung lobe, find the parent-child connection (edge) that feeds all its terminal nodes.
 
@@ -673,7 +673,7 @@ def find_feeding_elements(tree_dict, lobe_lca_mapping):
 
     # Determine the feeding edge for each lobe
     lobe_feeding_edges = {}
-    for lobe, lca_id in lobe_lca_mapping.items():
+    for lobe, lca_id in lobe_lcp_mapping.items():
         parent_id = parent_map.get(lca_id)
         if parent_id:
             lobe_feeding_edges[lobe] = (parent_id, lca_id)
@@ -766,7 +766,6 @@ centreline_dict_hierachy = define_parent_child(centreline_dict_hierachy)
 centreline_dict_final = copy.deepcopy(centreline_dict_hierachy)
 centreline_dict_final = fix_multiple_branches(centreline_dict_final)
 terminals = find_terminals(centreline_dict_final)
-results = check_terminals_inside_mesh(terminals, centreline_dict_final, os.path.join(ply_directory, 'RUL_surf.ply'))
 
 # Initialize a dictionary to hold the mapping
 terminal_to_lobe = {}
@@ -781,31 +780,44 @@ for lobe_name, mesh_path in lobe_mesh_paths.items():
         if is_inside:
             terminal_to_lobe[node_id] = lobe_name
 
-unassigned = check_unassigned_terminals(terminals, terminal_to_lobe)
-lobe_lca_mapping = find_lca_for_lobes(centreline_dict_final, terminal_to_lobe)
-lobe_feeding_edges = find_feeding_elements(centreline_dict_final, lobe_lca_mapping)
+unassigned = check_unassigned_terminals(terminals, terminal_to_lobe)  # find if any of the upper tree terminals is not assigned to a lobe
+if len(unassigned) > 0: # this bit of the code tries to assign them to the nearest lobe (surface)
+    unassigned_coords = np.array([centreline_dict_final[node]['coords'] for node in unassigned])
+    for idx, coord in enumerate(unassigned_coords):
+        min_distance = np.inf
+        closest_lobe = None
+        coord = np.array(coord).reshape(1, 3)  # Make it 2D array because find_closest_cell expects arrays
 
-to_export = False
+        for lobe_name, ply_path in lobe_mesh_paths.items():
+            mesh = pv.read(ply_path)
+            _, closest_point = mesh.find_closest_cell(coord, return_closest_point=True)
+
+            # Calculate Euclidean distance
+            distance = np.linalg.norm(coord - closest_point)
+
+            if distance < min_distance:
+                min_distance = distance
+                closest_lobe = lobe_name
+
+        terminal_to_lobe[unassigned[idx]] = closest_lobe
+
+# lobe_lca_mapping = find_lcp_for_lobes(centreline_dict_final, terminal_to_lobe)   # option to find which lobe they belong to
+# lobe_feeding_edges = find_feeding_elements(centreline_dict_final, lobe_lca_mapping)  # option to find joint parent elem feeding the lobe
+
+to_export = False   # Option to export the CMISS tree
 if to_export:
-    output_exnode = os.path.join(subject_path, '/Vessel/VMTK/Alfred07_Pre_MPA.exnode')
-    output_exelem = os.path.join(subject_path, '/Vessel/VMTK/Alfred07_Pre_MPA.exelem')
+    output_exnode = os.path.join(subject_path, '/Vessel/VMTK/Alfred12_Pre_MPA.exnode')
+    output_exelem = os.path.join(subject_path, '/Vessel/VMTK/Alfred12_Pre_MPA.exelem')
     writeExNodeFile(centreline_dict_final, output_exnode)
     writeExElemFile(centreline_dict_final, output_exelem)
 # -----------------------------
 # Load orientation and mesh data
 # -----------------------------
 
-to_visualise = True
+to_visualise = True  # Option to visualise, Useful for debugging and verification
 if to_visualise:
     directions = get_meta_from_json(os.path.join(subject_path, 'Vessel', 'Alfred12_Pre_VMTK', 'Centerline.json'))
     directions = np.array(directions)
-    print(directions)
     ply_paths = [lobe_mesh_paths['RUL'], lobe_mesh_paths['RML'], lobe_mesh_paths['RLL'],
-                 lobe_mesh_paths['LUL'],lobe_mesh_paths['LLL']]
+                 lobe_mesh_paths['LUL'], lobe_mesh_paths['LLL']]
     visualize_mesh_with_tree_and_terminals(centreline_dict_final, terminals, ply_paths)
-    # visualize_node_graph(
-    #    data=centreline_dict_final,
-    #    orientation_matrix=directions,  # Optional
-    #    ply_path=os.path.join(ply_directory, 'RUL_surf.ply'),  # Optional
-    #    terminals=terminals  # Optional
-    # )

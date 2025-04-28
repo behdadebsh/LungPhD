@@ -339,6 +339,7 @@ rml = annotate_RML(centroid_dict)
 rul = annotate_RUL(centroid_dict)
 rll = annotate_RLL(centroid_dict)
 lll = annotate_LLL(centroid_dict)
+lul = annotate_LUL(centroid_dict)
 
 
 # Plot centroids and cluster numbers
