@@ -18,7 +18,7 @@ def main():
     root_folder = '/hpc/bsha219/lung/Data'
     study = 'CTEPH'
     protocol = 'Pre'
-    subject_name = 'Alfred1'
+    subject_name = 'Alfred12'
     masked_name = subject_name + '_' + protocol + '_masked.mha'
     #masked_name = subject_name + '_' + protocol + '_thresholdmasked_0.mha'
     print("For", subject_name, protocol)
@@ -37,13 +37,15 @@ def main():
     metadata['size'] = img.GetSize()
     metadata['spacing'] = img.GetSpacing()
     metadata['origin'] = img.GetOrigin()
+    print(metadata['origin'])
     metadata['direction'] = img.GetDirection()
+    print(metadata['direction'])
 
     # Convert the image to a numpy array
     lungs = sitk.GetArrayFromImage(img)
 
     if metadata['direction'][8] == 1: # Flip z for RAI to match RAS
-        lungs = np.flip(lungs, axis=0) # ITK has array [z,y,x]
+       lungs = np.flip(lungs, axis=0) # ITK has array [z,y,x]
     # Reshape the array into a 3D array
     # img_array = img_array.reshape(metadata['size'][::-1])
 
@@ -86,9 +88,13 @@ def main():
     coords_RLL, intensity_RLL = voxel_avg_intensity(xy_res, z_res, direction_matrix, RLL_spacing, coords_RLL, lungs)
     print("=========== RLL Mapped =============")
     coords_RML, intensity_RML = voxel_avg_intensity(xy_res, z_res, direction_matrix, RML_spacing, coords_RML, lungs)
+    print("=========== RML Mapped =============")
     coords_RUL, intensity_RUL = voxel_avg_intensity(xy_res, z_res, direction_matrix, RUL_spacing, coords_RUL, lungs)
+    print("=========== RUL Mapped =============")
     coords_LLL, intensity_LLL = voxel_avg_intensity(xy_res, z_res, direction_matrix, LLL_spacing, coords_LLL, lungs)
+    print("=========== LLL Mapped =============")
     coords_LUL, intensity_LUL = voxel_avg_intensity(xy_res, z_res, direction_matrix, LUL_spacing, coords_LUL, lungs)
+    print("=========== LUL Mapped =============")
 
     coords_RLL = coords_RLL + translation_vector
     coords_LLL = coords_LLL + translation_vector
@@ -173,7 +179,7 @@ def main():
 
         termdict = sorted(termdict, key=lambda k: k['node_num'])
 
-        filename = lobe[j] + '_cluster_map_terminals_TTTTTT.exnode'
+        filename = lobe[j] + '_cluster_map_terminals.exnode'
         export_path = os.path.join(subject_path, protocol, 'Intensity_mapping') + '/' + filename
         with open(export_path, 'w') as f:
             f.write(' Group name : terminal clusters\n')
